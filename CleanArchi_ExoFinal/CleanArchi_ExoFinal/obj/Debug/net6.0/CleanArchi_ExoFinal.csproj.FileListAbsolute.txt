@@ -1,0 +1,15 @@
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\bin\Debug\net6.0\CleanArchi_ExoFinal.exe
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\bin\Debug\net6.0\CleanArchi_ExoFinal.deps.json
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\bin\Debug\net6.0\CleanArchi_ExoFinal.runtimeconfig.json
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\bin\Debug\net6.0\CleanArchi_ExoFinal.dll
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\bin\Debug\net6.0\CleanArchi_ExoFinal.pdb
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\CleanArchi_ExoFinal.csproj.AssemblyReference.cache
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\CleanArchi_ExoFinal.GeneratedMSBuildEditorConfig.editorconfig
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\CleanArchi_ExoFinal.AssemblyInfoInputs.cache
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\CleanArchi_ExoFinal.AssemblyInfo.cs
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\CleanArchi_ExoFinal.csproj.CoreCompileInputs.cache
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\CleanArchi_ExoFinal.dll
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\refint\CleanArchi_ExoFinal.dll
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\CleanArchi_ExoFinal.pdb
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\CleanArchi_ExoFinal.genruntimeconfig.cache
+E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\obj\Debug\net6.0\ref\CleanArchi_ExoFinal.dll
