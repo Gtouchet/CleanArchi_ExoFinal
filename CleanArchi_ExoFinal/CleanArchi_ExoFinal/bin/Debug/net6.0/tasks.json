@@ -1,48 +1,48 @@
 [
   {
     "Description": "init a project to create an app for my tasks",
-    "CreationDate": "2023-02-16T18:32:32.8707159+01:00",
-    "DueDate": "2023-02-17T10:32:32.8707572+01:00",
+    "CreationDate": "2023-02-16T19:41:11.2592711+01:00",
+    "DueDate": "2023-02-17T11:41:11.2593118+01:00",
     "CloseDate": null,
     "State": 3,
     "Subtasks": [
       {
         "Description": "init repo for the project",
-        "CreationDate": "2023-02-16T18:32:32.87082+01:00",
+        "CreationDate": "2023-02-16T19:41:11.2593769+01:00",
         "DueDate": null,
         "CloseDate": null,
         "State": 3,
         "Subtasks": [],
-        "Id": "201b2de6-abcc-4110-99a4-16f7e8fe9070"
+        "Id": "0066113c-67ec-4eb2-8f37-09ce1616020c"
       },
       {
         "Description": "create solution and project",
-        "CreationDate": "2023-02-16T18:32:32.8708257+01:00",
+        "CreationDate": "2023-02-16T19:41:11.2593837+01:00",
         "DueDate": null,
         "CloseDate": null,
         "State": 3,
         "Subtasks": [],
-        "Id": "cef7399d-6dcf-446e-8f16-048bbcbd4a7d"
+        "Id": "e19f5ab5-e9db-419c-939a-74fa0f181952"
       },
       {
         "Description": "create a small poc to test formats",
-        "CreationDate": "2023-02-16T18:32:32.8708262+01:00",
+        "CreationDate": "2023-02-16T19:41:11.2593845+01:00",
         "DueDate": null,
         "CloseDate": null,
         "State": 2,
         "Subtasks": [],
-        "Id": "0ba76dbe-0a03-4584-b488-440d0ac974a5"
+        "Id": "a238670d-3a5c-42d1-8604-7476541305db"
       }
     ],
-    "Id": "12b59894-e35e-4ec1-a316-998ef7912c01"
+    "Id": "1fbc6f96-42b6-4076-9dd4-720e41857054"
   },
   {
-    "Description": "test",
-    "CreationDate": "2023-02-17T18:32:32.905889+01:00",
-    "DueDate": null,
+    "Description": " ma super tache",
+    "CreationDate": "2023-02-17T19:41:23.322423+01:00",
+    "DueDate": "2023-02-17T19:41:23.3222073+01:00",
     "CloseDate": null,
-    "State": 0,
+    "State": 3,
     "Subtasks": [],
-    "Id": "1b0e525a-57e9-480d-ad7d-3fb8f5aa490d"
+    "Id": "b111ca72-7b97-4d64-9cbc-3a1740229214"
   }
 ]
