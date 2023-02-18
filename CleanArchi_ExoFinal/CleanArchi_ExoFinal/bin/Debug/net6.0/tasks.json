@@ -1,48 +1,11 @@
 [
   {
-    "Description": "init a project to create an app for my tasks",
-    "CreationDate": "2023-02-16T19:41:11.2592711+01:00",
-    "DueDate": "2023-02-17T11:41:11.2593118+01:00",
-    "CloseDate": null,
-    "State": 3,
-    "Subtasks": [
-      {
-        "Description": "init repo for the project",
-        "CreationDate": "2023-02-16T19:41:11.2593769+01:00",
-        "DueDate": null,
-        "CloseDate": null,
-        "State": 3,
-        "Subtasks": [],
-        "Id": "0066113c-67ec-4eb2-8f37-09ce1616020c"
-      },
-      {
-        "Description": "create solution and project",
-        "CreationDate": "2023-02-16T19:41:11.2593837+01:00",
-        "DueDate": null,
-        "CloseDate": null,
-        "State": 3,
-        "Subtasks": [],
-        "Id": "e19f5ab5-e9db-419c-939a-74fa0f181952"
-      },
-      {
-        "Description": "create a small poc to test formats",
-        "CreationDate": "2023-02-16T19:41:11.2593845+01:00",
-        "DueDate": null,
-        "CloseDate": null,
-        "State": 2,
-        "Subtasks": [],
-        "Id": "a238670d-3a5c-42d1-8604-7476541305db"
-      }
-    ],
-    "Id": "1fbc6f96-42b6-4076-9dd4-720e41857054"
-  },
-  {
-    "Description": " ma super tache",
-    "CreationDate": "2023-02-17T19:41:23.322423+01:00",
-    "DueDate": "2023-02-17T19:41:23.3222073+01:00",
+    "Description": "ma tache",
+    "CreationDate": "2023-02-18T15:08:41.8861561+01:00",
+    "DueDate": "2023-02-23T15:08:41.8846748+01:00",
     "CloseDate": null,
     "State": 3,
     "Subtasks": [],
-    "Id": "b111ca72-7b97-4d64-9cbc-3a1740229214"
+    "Id": "17ace9fc-00ee-498c-bb77-09894071f010"
   }
 ]
