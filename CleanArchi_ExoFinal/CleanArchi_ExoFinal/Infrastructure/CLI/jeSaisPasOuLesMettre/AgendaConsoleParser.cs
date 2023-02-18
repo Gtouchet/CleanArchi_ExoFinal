@@ -45,13 +45,13 @@ public static class AgendaCommandParser
     
     private static AgendaCommand ParseOptions(AgendaCommand agendaCommand, string input)
     {
-        var pattern1 = @"-d:\d{4}-\d{2}-\d{2}";
-        var pattern2 = @"-c:""(.+?)""";
-        var pattern3 = @"-s:\w+";
+        var patternDate = @"-d:\d{4}-\d{2}-\d{2}";
+        var patternContent = @"-c:""(.+?)""";
+        var patternStatus = @"-s:\w+";
 
-        agendaCommand.DueDate = Regex.Match(input, pattern1).Value != "" ? DateTime.Parse(Regex.Match(input, pattern1).Value.Remove(0,3)) : null;
-        agendaCommand.Content = Regex.Match(input, pattern2)?.Groups[1].Value;
-        agendaCommand.Status = Regex.Match(input, pattern3)?.Value != "" ? (State) Enum.Parse(typeof(State), Regex.Match(input, pattern3).Value.Remove(0,3)) : default(State);
+        agendaCommand.DueDate = Regex.Match(input, patternDate).Value != "" ? DateTime.Parse(Regex.Match(input, patternDate).Value.Remove(0,3)) : null;
+        agendaCommand.Content = Regex.Match(input, patternContent)?.Groups[1].Value;
+        agendaCommand.Status = Regex.Match(input, patternStatus)?.Value != "" ? (State) Enum.Parse(typeof(State), Regex.Match(input, patternStatus).Value.Remove(0,3)) : default(State);
 
         return agendaCommand;
     }
