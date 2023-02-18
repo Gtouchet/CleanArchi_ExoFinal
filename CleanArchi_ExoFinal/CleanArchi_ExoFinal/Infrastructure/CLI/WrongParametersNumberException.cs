@@ -12,6 +12,11 @@ namespace CleanArchi_ExoFinal.Infrastructure.CLI
         readall,
         [Description("delete command needs 2 arguments : delete, guid")]
         delete,
+        [Description("command not recognized")]
+        CommandNotRecognized,
+        [Description("Not enough arguments")]
+        NotEnoughArguments,
+        
     }
 
     public class WrongParametersForCommandException : Exception

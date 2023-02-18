@@ -10,25 +10,25 @@ public static class AgendaCommandParser
     {
         var result = new AgendaCommand();
         if (string.IsNullOrWhiteSpace(command) || command.Length < 7)
-            throw new ArgumentException("Invalid command string : " + command);
+            throw new WrongParametersForCommandException(CommandErrorMessage.NotEnoughArguments);
         
         var updatedString = command.Remove(0, 7);
         
         var parts = updatedString.Split(' ').ToList();
         if (parts.Count == 0)
-            throw new ArgumentException("Invalid command string : " + command);
+            throw new WrongParametersForCommandException(CommandErrorMessage.NotEnoughArguments);
         
         if (Enum.TryParse<ECommand>(parts[0], true, out var action))
             result.Command = action;
         else
-            throw new ArgumentException("Invalid command command : " + command);
+            throw new WrongParametersForCommandException(CommandErrorMessage.CommandNotRecognized);
 
         if ( result.Command == ECommand.readall) return result;
         
         updatedString = updatedString.Remove(0, parts[0].Length);
         parts.RemoveAt(0);
         if (result.Command != ECommand.readall && parts.Count < 1)
-            throw new ArgumentException("Invalid command arguments : " + command);
+            throw new WrongParametersForCommandException(CommandErrorMessage.NotEnoughArguments);
 
         if (int.TryParse(parts[0], out int id))
         {
