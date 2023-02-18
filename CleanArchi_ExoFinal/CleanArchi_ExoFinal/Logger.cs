@@ -13,6 +13,7 @@ public sealed class Logger
         return logger;
     }
 
+    // TODO: écrire dans un logs.txt
     public void Log(string message)
     {
         Console.WriteLine($"{DateTimeOffset.Now.ToString("[dd/mm/yyyy - hh:mm:ss]")} - {message}");

@@ -14,7 +14,7 @@ public class JsonRepository : IRepository<TaskEntity>
 
     public void Write(TaskEntity data)
     {
-        List<TaskEntity> tasks = Read();
+        List<TaskEntity> tasks = this.Read();
         tasks.Add(data);
         string json = JsonSerializer.Serialize(tasks, new JsonSerializerOptions() { WriteIndented = true });
         File.WriteAllText(filepath, json);
@@ -36,10 +36,10 @@ public class JsonRepository : IRepository<TaskEntity>
 
     public bool Delete(Guid id)
     {
-        TaskEntity? task = Read(id);
+        TaskEntity? task = this.Read(id);
         if (task != null)
         {
-            List<TaskEntity> tasks = Read();
+            List<TaskEntity> tasks = this.Read();
             tasks.RemoveAll(t => t.Id.Equals(id));
             string json = JsonSerializer.Serialize(tasks, new JsonSerializerOptions() { WriteIndented = true });
             File.WriteAllText(filepath, json);
