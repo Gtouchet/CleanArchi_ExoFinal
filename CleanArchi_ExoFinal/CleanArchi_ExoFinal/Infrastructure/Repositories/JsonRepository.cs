@@ -11,13 +11,14 @@ public class JsonRepository : IRepository<TaskEntity>
     {
         this.filepath = filepath;
     }
-
-    public void Write(TaskEntity data)
+    
+    public Guid Write(TaskEntity data)
     {
         List<TaskEntity> tasks = this.Read();
         tasks.Add(data);
         string json = JsonSerializer.Serialize(tasks, new JsonSerializerOptions() { WriteIndented = true });
         File.WriteAllText(filepath, json);
+        return data.Id;
     }
 
     public List<TaskEntity> Read()

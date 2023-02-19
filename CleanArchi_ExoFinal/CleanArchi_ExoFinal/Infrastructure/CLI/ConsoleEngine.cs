@@ -70,7 +70,8 @@ public class ConsoleEngine : ConsoleManager
         switch (agendaCommand.Command)
         {
             case EAgendaCommand.Create:
-                this.handlersProcessor.Execute(this.ParseAgendaCommandAs<CreateTaskCommand>(agendaCommand)!);
+                Guid id = (Guid)this.handlersProcessor.Execute(this.ParseAgendaCommandAs<CreateTaskCommand>(agendaCommand)!);
+                this.WriteLine(id.ToString());
                 break;
             case EAgendaCommand.Read:
                 TaskEntity task = (TaskEntity)this.handlersProcessor.Execute(this.ParseAgendaCommandAs<ReadTaskQuery>(agendaCommand)!);

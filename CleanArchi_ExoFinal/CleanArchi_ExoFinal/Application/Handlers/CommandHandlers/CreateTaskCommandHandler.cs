@@ -5,8 +5,6 @@ using CleanArchi_ExoFinal.Kernel;
 
 namespace CleanArchi_ExoFinal.Handlers.CommandHandlers;
 
-public struct Void { }
-
 public class CreateTaskCommand : Message
 {
     public string? Description { get; set; }
@@ -14,18 +12,17 @@ public class CreateTaskCommand : Message
     public State State { get; set; }
 }
 
-public class CreateTaskCommandHandler : CommandBase, ICommandHandler<Void, CreateTaskCommand>
+public class CreateTaskCommandHandler : CommandBase, ICommandHandler<Guid, CreateTaskCommand>
 {
     public CreateTaskCommandHandler(Context context) : base(context) { }
     
-    public Void Handle(CreateTaskCommand message)
+    public Guid Handle(CreateTaskCommand message)
     {
-        this.Context.Tasks.Write(new TaskEntity()
+        return this.Context.Tasks.Write(new TaskEntity()
         {
             Description = message.Description,
             DueDate = message.DueDate,
             State = message.State,
         });
-        return default;
     }
 }
