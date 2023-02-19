@@ -17,5 +17,6 @@ public sealed class Logger
     public void Log(string message)
     {
         Console.WriteLine($"{DateTimeOffset.Now.ToString("[dd/mm/yyyy - hh:mm:ss]")} - {message}");
+        File.AppendAllText("logs.txt", $"{DateTimeOffset.Now.ToString("[dd/mm/yyyy - hh:mm:ss]")} - {message}");
     }
 }

@@ -7,7 +7,7 @@ namespace CleanArchi_ExoFinal.Application.Handlers.CommandHandlers;
 
 public struct Void { }
 
-internal class UpdateTaskCommand : Message
+internal class UpdateTaskCommand : Command
 {
     public Guid Id { get; set; }
     public string? Description { get; set; }

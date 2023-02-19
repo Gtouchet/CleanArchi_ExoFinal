@@ -5,7 +5,7 @@ using CleanArchi_ExoFinal.Kernel;
 
 namespace CleanArchi_ExoFinal.Application.Handlers.QueryHandlers;
 
-public class ReadTaskQuery : Message
+public class ReadTaskQuery : Query
 {
     public Guid Id { get; set; }
 }

@@ -71,22 +71,22 @@ public class ConsoleEngine : ConsoleManager
         switch (agendaCommand.Command)
         {
             case EAgendaCommand.Create:
-                Guid id = (Guid)this.handlersProcessor.Execute(this.ParseAgendaCommandAs<CreateTaskCommand>(agendaCommand)!);
+                Guid id = (Guid)this.handlersProcessor.ExecuteCommand(this.ParseAgendaCommandAs<CreateTaskCommand>(agendaCommand)!);
                 this.WriteLine(id.ToString());
                 break;
             case EAgendaCommand.Read:
-                TaskEntity task = (TaskEntity)this.handlersProcessor.Execute(this.ParseAgendaCommandAs<ReadTaskQuery>(agendaCommand)!);
+                TaskEntity task = (TaskEntity)this.handlersProcessor.ExecuteQuery(this.ParseAgendaCommandAs<ReadTaskQuery>(agendaCommand)!);
                 this.WriteLine(task.ToString());
                 break;
             case EAgendaCommand.ReadAll:
-                List<TaskEntity> tasks = (List<TaskEntity>)this.handlersProcessor.Execute(this.ParseAgendaCommandAs<ReadTasksQuery>(agendaCommand)!);
+                List<TaskEntity> tasks = (List<TaskEntity>)this.handlersProcessor.ExecuteQuery(this.ParseAgendaCommandAs<ReadTasksQuery>(agendaCommand)!);
                 tasks.ForEach(task => this.WriteLine(task.ToString()));
                 break;
             case EAgendaCommand.Update:
-                this.handlersProcessor.Execute(this.ParseAgendaCommandAs<UpdateTaskCommand>(agendaCommand)!);
+                this.handlersProcessor.ExecuteCommand(this.ParseAgendaCommandAs<UpdateTaskCommand>(agendaCommand)!);
                 break;
             case EAgendaCommand.Delete:
-                this.handlersProcessor.Execute(this.ParseAgendaCommandAs<DeleteTaskCommand>(agendaCommand)!);
+                this.handlersProcessor.ExecuteCommand(this.ParseAgendaCommandAs<DeleteTaskCommand>(agendaCommand)!);
                 break;
             case EAgendaCommand.Add:
                 this.handlersProcessor.Execute(this.ParseAgendaCommandAs<AddSubTaskCommand>(agendaCommand)!);

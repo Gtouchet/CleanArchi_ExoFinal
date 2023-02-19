@@ -14,6 +14,7 @@ public class HandlerException : Exception
     public HandlerException(string message) : base(message) { }
 }
 
+#pragma warning disable CS8602, CS8603, CS8597
 public class HandlersProcessor
 {
     private readonly List<CommandBase> commands;
@@ -26,38 +27,59 @@ public class HandlersProcessor
     }
 
     /// <summary>
-    /// Execute a specific handler (command or query) depending on the type of message to execute
+    /// Execute a command
     /// </summary>
-    /// <typeparam name="T">The type of the message that the container has to execute</typeparam>
-    /// <param name="message">The message to execute</param>
-#pragma warning disable CS8602, CS8603, CS8597
-    public object Execute<T>(T message) where T : Message
+    /// <typeparam name="C">The command message type to process</typeparam>
+    /// <param name="command">The command to execute</param>
+    /// <returns>An object, which type depends on the command to execute</returns>
+    /// <exception cref="UnknownHandlerException"></exception>
+    public object ExecuteCommand<C>(C command) where C : Command
     {
         CommandBase? commandHandler = commands
             .FirstOrDefault(c => c.GetType()
                 .GetInterfaces()
                 .Any(i => i.GetGenericArguments()
-                    .Any(a => a == typeof(T))));
-
-        QueryBase? queryHandler = queries
-            .FirstOrDefault(c => c.GetType()
-                .GetInterfaces()
-                .Any(i => i.GetGenericArguments()
-                    .Any(a => a == typeof(T))));
-
+                    .Any(a => a == typeof(C))));
         try
         {
             if (commandHandler != null)
             {
-                return commandHandler.GetType().GetMethod("Handle").Invoke(commandHandler, new object[] { message });
-            }
-            else if (queryHandler != null)
-            {
-                return queryHandler.GetType().GetMethod("Handle").Invoke(queryHandler, new object[] { message });
+                return commandHandler.GetType().GetMethod("Handle").Invoke(commandHandler, new object[] { command });
             }
             else
             {
-                throw new UnknownHandlerException(typeof(T));
+                throw new UnknownHandlerException(typeof(C));
+            }
+        }
+        catch (TargetInvocationException exception)
+        {
+            throw exception.InnerException;
+        }
+    }
+
+    /// <summary>
+    /// Execute a query
+    /// </summary>
+    /// <typeparam name="Q">The query message type to process</typeparam>
+    /// <param name="query">The query to execute</param>
+    /// <returns>An object, which type depends on the query to execute</returns>
+    /// <exception cref="UnknownHandlerException"></exception>
+    public object ExecuteQuery<Q>(Q query) where Q : Query
+    {
+        QueryBase? queryHandler = queries
+            .FirstOrDefault(c => c.GetType()
+                .GetInterfaces()
+                .Any(i => i.GetGenericArguments()
+                    .Any(a => a == typeof(Q))));
+        try
+        {
+            if (queryHandler != null)
+            {
+                return queryHandler.GetType().GetMethod("Handle").Invoke(queryHandler, new object[] { query });
+            }
+            else
+            {
+                throw new UnknownHandlerException(typeof(Q));
             }
         }
         catch (TargetInvocationException exception)
