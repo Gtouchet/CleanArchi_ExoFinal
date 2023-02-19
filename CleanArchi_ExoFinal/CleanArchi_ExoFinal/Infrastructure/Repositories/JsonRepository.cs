@@ -32,7 +32,19 @@ public class JsonRepository : IRepository<TaskEntity>
         return JsonSerializer.Deserialize<List<TaskEntity>>(fileContent)!.FirstOrDefault(t => t.Id.Equals(id));
     }
 
-    // update
+    public void Update(Guid id, TaskEntity data)
+    {
+        List<TaskEntity> tasks = this.Read();
+        TaskEntity? task = tasks.FirstOrDefault(t => t.Id.Equals(id));
+        if (task is not null)
+        {
+            task.Description = data.Description;
+            task.DueDate = data.DueDate;
+            task.State = data.State;
+        }
+        string json = JsonSerializer.Serialize(tasks, new JsonSerializerOptions() { WriteIndented = true });
+        File.WriteAllText(filepath, json);
+    }
 
     public bool Delete(Guid id)
     {
