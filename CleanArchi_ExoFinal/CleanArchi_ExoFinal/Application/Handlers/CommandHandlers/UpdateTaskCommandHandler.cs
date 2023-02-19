@@ -6,6 +6,7 @@ using CleanArchi_ExoFinal.Kernel;
 namespace CleanArchi_ExoFinal.Application.Handlers.CommandHandlers;
 
 public struct Void { }
+
 internal class UpdateTaskCommand : Message
 {
     public Guid Id { get; set; }
@@ -14,7 +15,7 @@ internal class UpdateTaskCommand : Message
     public State? State { get; set; }
 }
 
-internal class UpdateTaskCommandHandler  :CommandBase, ICommandHandler<Void, UpdateTaskCommand>
+internal class UpdateTaskCommandHandler : CommandBase, ICommandHandler<Void, UpdateTaskCommand>
 {
     public UpdateTaskCommandHandler(Context context) : base(context) { }
 

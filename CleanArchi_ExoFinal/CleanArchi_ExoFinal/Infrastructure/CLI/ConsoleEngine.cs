@@ -1,4 +1,5 @@
 ﻿using CleanArchi_ExoFinal.Application;
+using CleanArchi_ExoFinal.Application.Handlers.CommandHandlers;
 using CleanArchi_ExoFinal.Application.Handlers.QueryHandlers;
 using CleanArchi_ExoFinal.Application.Kernel;
 using CleanArchi_ExoFinal.Domain;
@@ -82,7 +83,7 @@ public class ConsoleEngine : ConsoleManager
                 tasks.ForEach(task => this.WriteLine(task.ToString()));
                 break;
             case EAgendaCommand.Update:
-                Console.WriteLine(agendaCommand.Id);
+                this.handlersProcessor.Execute(this.ParseAgendaCommandAs<UpdateTaskCommand>(agendaCommand)!);
                 break;
             case EAgendaCommand.Delete:
                 this.handlersProcessor.Execute(this.ParseAgendaCommandAs<DeleteTaskCommand>(agendaCommand)!);
