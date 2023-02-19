@@ -5,7 +5,7 @@ using CleanArchi_ExoFinal.Kernel;
 
 namespace CleanArchi_ExoFinal.Handlers.CommandHandlers;
 
-public class DeleteTaskCommand : Message
+public class DeleteTaskCommand : Command
 {
     public string? Id { get; set; }
 }

@@ -5,7 +5,7 @@ using CleanArchi_ExoFinal.Kernel;
 
 namespace CleanArchi_ExoFinal.Application.Handlers.QueryHandlers;
 
-public class ReadTasksQuery : Message
+public class ReadTasksQuery : Query
 {
     
 }

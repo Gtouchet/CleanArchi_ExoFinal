@@ -5,7 +5,7 @@ using CleanArchi_ExoFinal.Kernel;
 
 namespace CleanArchi_ExoFinal.Handlers.CommandHandlers;
 
-public class CreateTaskCommand : Message
+public class CreateTaskCommand : Command
 {
     public string? Description { get; set; }
     public DateTimeOffset? DueDate { get; set; }
