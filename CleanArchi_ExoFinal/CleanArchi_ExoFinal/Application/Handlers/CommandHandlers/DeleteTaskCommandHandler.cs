@@ -1,5 +1,4 @@
 ﻿using CleanArchi_ExoFinal.Application.Kernel;
-using CleanArchi_ExoFinal.Domain;
 using CleanArchi_ExoFinal.Infrastructure.Repositories;
 using CleanArchi_ExoFinal.Kernel;
 
@@ -7,7 +6,7 @@ namespace CleanArchi_ExoFinal.Handlers.CommandHandlers;
 
 public class DeleteTaskCommand : Command
 {
-    public string? Id { get; set; }
+    public Guid Id { get; set; }
 }
 
 public class DeleteTaskCommandHandler : CommandHandlerBase, ICommandHandler<bool, DeleteTaskCommand>
@@ -18,6 +17,6 @@ public class DeleteTaskCommandHandler : CommandHandlerBase, ICommandHandler<bool
     {
         this.Logger.Log($"{this.GetType().Name} called on task ID {message.Id}");
 
-        return this.Context.Tasks.Delete(Guid.Parse(message.Id!));
+        return this.Context.Tasks.Delete(message.Id);
     }
 }

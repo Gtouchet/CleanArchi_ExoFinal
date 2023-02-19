@@ -51,7 +51,7 @@ public class ConsoleEngine : ConsoleManager
         }
         else
         {
-            return (default(CliCommand), null);
+            return (default, null);
         }
     }
 
@@ -123,11 +123,11 @@ public class ConsoleEngine : ConsoleManager
             },
             Type type when type.Equals(typeof(DeleteTaskCommand)) => new DeleteTaskCommand()
             {
-                Id = agendaCommand.Id.ToString(),
+                Id = agendaCommand.Id!.Value,
             },
             Type type when type.Equals(typeof(AddSubTaskCommand)) => new AddSubTaskCommand()
             {
-                TaskId = agendaCommand.Id!.Value,
+                Id = agendaCommand.Id!.Value,
                 Description = agendaCommand.Description,
                 DueDate = agendaCommand.DueDate,
                 State = agendaCommand.State,

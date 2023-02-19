@@ -7,7 +7,7 @@ namespace CleanArchi_ExoFinal.Application.Handlers.CommandHandlers;
 
 public struct Void { }
 
-internal class UpdateTaskCommand : Command
+public class UpdateTaskCommand : Command
 {
     public Guid Id { get; set; }
     public string? Description { get; set; }
@@ -15,7 +15,7 @@ internal class UpdateTaskCommand : Command
     public State? State { get; set; }
 }
 
-internal class UpdateTaskCommandHandler : CommandHandlerBase, ICommandHandler<Void, UpdateTaskCommand>
+public class UpdateTaskCommandHandler : CommandHandlerBase, ICommandHandler<Void, UpdateTaskCommand>
 {
     public UpdateTaskCommandHandler(Context context, Logger logger) : base(context, logger) { }
 
