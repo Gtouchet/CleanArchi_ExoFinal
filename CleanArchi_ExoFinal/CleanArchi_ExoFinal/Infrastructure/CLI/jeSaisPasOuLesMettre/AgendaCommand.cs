@@ -1,11 +1,23 @@
 using CleanArchi_ExoFinal.Domain;
+
 namespace CleanArchi_ExoFinal.Infrastructure.CLI.jeSaisPasOuLesMettre;
 
 public struct AgendaCommand
 {
-    public ECommand Command;
-    public int? Id;
-    public string? Content;
+    public EAgendaCommand Command;
+    public Guid? Id;
+    public string? Description;
     public DateTime? DueDate;
-    public State Status;
+    public State State;
+}
+
+public enum EAgendaCommand
+{
+    Unknown,
+    Create,
+    Read,
+    ReadAll,
+    Delete,
+    Update,
+    Add,
 }

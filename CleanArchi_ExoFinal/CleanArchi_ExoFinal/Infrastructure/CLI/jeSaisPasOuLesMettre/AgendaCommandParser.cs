@@ -3,10 +3,9 @@ using CleanArchi_ExoFinal.Domain;
 using CleanArchi_ExoFinal.Infrastructure.CLI.jeSaisPasOuLesMettre;
 namespace CleanArchi_ExoFinal.Infrastructure.CLI;
 
-// TODO elle est static est je suis pas focément convaincu du concepte
-public static class AgendaCommandParser
+public class AgendaCommandParser
 {
-    public static AgendaCommand Parse(string command)
+    public AgendaCommand Parse(string command)
     {
         var result = new AgendaCommand();
         if (string.IsNullOrWhiteSpace(command) || command.Length < 7)
@@ -18,19 +17,19 @@ public static class AgendaCommandParser
         if (parts.Count == 0)
             throw new WrongParametersForCommandException(CommandErrorMessage.NotEnoughArguments);
         
-        if (Enum.TryParse<ECommand>(parts[0], true, out var action))
+        if (Enum.TryParse(parts[0], ignoreCase: true, out EAgendaCommand action))
             result.Command = action;
         else
             throw new WrongParametersForCommandException(CommandErrorMessage.CommandNotRecognized);
 
-        if ( result.Command == ECommand.readall) return result;
+        if (result.Command == EAgendaCommand.ReadAll) return result;
         
         updatedString = updatedString.Remove(0, parts[0].Length);
         parts.RemoveAt(0);
-        if (result.Command != ECommand.readall && parts.Count < 1)
+        if (result.Command != EAgendaCommand.ReadAll && parts.Count < 1)
             throw new WrongParametersForCommandException(CommandErrorMessage.NotEnoughArguments);
 
-        if (int.TryParse(parts[0], out int id))
+        if (Guid.TryParse(parts[0], out Guid id))
         {
             result.Id = id;
             updatedString = updatedString.Remove(0, parts[0].Length);
@@ -43,15 +42,17 @@ public static class AgendaCommandParser
         return ParseOptions(result, updatedString);
     }
     
-    private static AgendaCommand ParseOptions(AgendaCommand agendaCommand, string input)
+    private AgendaCommand ParseOptions(AgendaCommand agendaCommand, string input)
     {
-        var patternDate = @"-d:\d{4}-\d{2}-\d{2}";
-        var patternContent = @"-c:""(.+?)""";
-        var patternStatus = @"-s:\w+";
+        string patternDueDate = @"-d:\d{4}-\d{2}-\d{2}";
+        string patternDescription = @"-c:""(.+?)""";
+        string patternState = @"-s:\w+";
+        string patternId = @"-id:\w+";
 
-        agendaCommand.DueDate = Regex.Match(input, patternDate).Value != "" ? DateTime.Parse(Regex.Match(input, patternDate).Value.Remove(0,3)) : null;
-        agendaCommand.Content = Regex.Match(input, patternContent)?.Groups[1].Value;
-        agendaCommand.Status = Regex.Match(input, patternStatus)?.Value != "" ? (State) Enum.Parse(typeof(State), Regex.Match(input, patternStatus).Value.Remove(0,3)) : default(State);
+        agendaCommand.DueDate = Regex.Match(input, patternDueDate).Value != "" ? DateTime.Parse(Regex.Match(input, patternDueDate).Value.Remove(0, 3)) : null;
+        agendaCommand.Description = Regex.Match(input, patternDescription)?.Groups[1].Value;
+        agendaCommand.State = Regex.Match(input, patternState)?.Value != "" ? (State)Enum.Parse(typeof(State), Regex.Match(input, patternState).Value.Remove(0, 3), ignoreCase: true) : default(State);
+        agendaCommand.Id = Regex.Match(input, patternId)?.Value != "" ? Guid.Parse(Regex.Match(input, patternId).Value.Remove(0, 4)) : null;
 
         return agendaCommand;
     }
