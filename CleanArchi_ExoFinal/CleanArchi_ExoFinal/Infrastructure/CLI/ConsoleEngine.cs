@@ -3,131 +3,125 @@ using CleanArchi_ExoFinal.Application.Handlers.QueryHandlers;
 using CleanArchi_ExoFinal.Application.Kernel;
 using CleanArchi_ExoFinal.Domain;
 using CleanArchi_ExoFinal.Handlers.CommandHandlers;
+using CleanArchi_ExoFinal.Infrastructure.CLI.jeSaisPasOuLesMettre;
 
 namespace CleanArchi_ExoFinal.Infrastructure.CLI;
 
-public enum ECommand
-{
-    unknown,
-    create,
-    read,
-    readall,
-    // updatestate,
-    delete,
-    quit,
-}
-
-// TODO: séparateur espace
-// description entre ""
 public class ConsoleEngine : ConsoleManager
 {
+    private readonly AgendaCommandParser agendaCommandParser;
     private readonly HandlersProcessor handlersProcessor;
 
-    public ConsoleEngine(HandlersProcessor handlersProcessor)
+    public ConsoleEngine(
+        AgendaCommandParser agendaCommandParser,
+        HandlersProcessor handlersProcessor)
     {
         this.handlersProcessor = handlersProcessor;
+        this.agendaCommandParser = agendaCommandParser;
     }
 
     public void Run()
     {
         this.WriteLine("bonjour TODO tuto comment ca marche ?");
-
-        string userInput = this.GetUserInput();
-        ECommand userCommand = Utils.ParseStringAs<ECommand>(userInput.Split(",")[0]);
-        while (!userCommand.Equals(ECommand.quit))
+        
+        (EDomain, string?) userInput = this.GetUserCommand();
+        while (!userInput.Item1.Equals(EDomain.Quit))
         {
-            string[] args = this.FormatUserInput(userInput);
             try
             {
-                this.InterpretCommand(userCommand, args);
+                this.ProcessCommand(userInput.Item1, userInput.Item2);
             }
             catch (Exception exception)
             {
                 this.WriteLine(exception.Message);
             }
-            userInput = this.GetUserInput();
-            userCommand = Utils.ParseStringAs<ECommand>(userInput.Split(",")[0]);
+            userInput = this.GetUserCommand();
         }
     }
 
-    private string GetUserInput()
+    private (EDomain, string?) GetUserCommand()
     {
         this.Write("> ");
-        return this.Read() ?? string.Empty;
-    }
-
-    private string[] FormatUserInput(string userInput)
-    {
-        return userInput
-            .Split(",")
-            .Select(i => i.Trim())
-            .ToArray();
-    }
-
-    private void InterpretCommand(ECommand command, string[] args)
-    {
-        switch (command)
+        string? input = this.Read();
+        if (input != null)
         {
-            case ECommand.create: // > create, description, 7, done
-                if (args.Length != 4) throw new WrongParametersForCommandException(CommandErrorMessage.create);
-                this.handlersProcessor.Execute(this.ParseUserInputAs<CreateTaskCommand>(args)!);
+            Enum.TryParse(input.Split(" ")[0], ignoreCase: true, out EDomain domain);
+            return (domain, input);
+        }
+        else
+        {
+            return (default(EDomain), null);
+        }
+    }
+
+    private void ProcessCommand(EDomain domain, string? userCommand)
+    {
+        switch (domain)
+        {
+           case EDomain.Agenda: this.InterpretAgendaCommand(userCommand!); break;
+           // other domains
+           default: throw new UnkownDomainException($"Error, unknown domain");
+        }
+    }
+
+    private void InterpretAgendaCommand(string userCommand)
+    {
+        AgendaCommand agendaCommand = this.agendaCommandParser.Parse(userCommand);
+        switch (agendaCommand.Command)
+        {
+            case EAgendaCommand.Create:
+                this.handlersProcessor.Execute(this.ParseAgendaCommandAs<CreateTaskCommand>(agendaCommand)!);
                 break;
-            case ECommand.read: // > read, guid
-                if (args.Length != 2) throw new WrongParametersForCommandException(CommandErrorMessage.read);
-                TaskEntity task = (TaskEntity)this.handlersProcessor.Execute(this.ParseUserInputAs<ReadTaskQuery>(args)!);
+            case EAgendaCommand.Read:
+                TaskEntity task = (TaskEntity)this.handlersProcessor.Execute(this.ParseAgendaCommandAs<ReadTaskQuery>(agendaCommand)!);
                 this.WriteLine(task.ToString());
                 break;
-            case ECommand.readall: // > readall
-                if (args.Length != 1) throw new WrongParametersForCommandException(CommandErrorMessage.readall);
-                List<TaskEntity> tasks = (List<TaskEntity>)this.handlersProcessor.Execute(this.ParseUserInputAs<ReadTasksQuery>(args)!);
+            case EAgendaCommand.ReadAll:
+                List<TaskEntity> tasks = (List<TaskEntity>)this.handlersProcessor.Execute(this.ParseAgendaCommandAs<ReadTasksQuery>(agendaCommand)!);
                 tasks.ForEach(task => this.WriteLine(task.ToString()));
                 break;
-            case ECommand.delete: // > delete, guid
-                if (args.Length != 2) throw new WrongParametersForCommandException(CommandErrorMessage.delete);
-                this.handlersProcessor.Execute(this.ParseUserInputAs<DeleteTaskCommand>(args)!);
+            case EAgendaCommand.Update:
+                Console.WriteLine(agendaCommand.Id);
+                break;
+            case EAgendaCommand.Delete:
+                this.handlersProcessor.Execute(this.ParseAgendaCommandAs<DeleteTaskCommand>(agendaCommand)!);
+                break;
+            case EAgendaCommand.Add:
+                // TODO add subtask
                 break;
             default: throw new Exception(""); // TODO
-        };
+        }
     }
 
-    private T? ParseUserInputAs<T>(string[] args) where T : Message
+    /**
+     * other domains interpreter methods
+     */
+    
+    private T? ParseAgendaCommandAs<T>(AgendaCommand agendaCommand) where T : Message
     {
         Message? command = typeof(T) switch
         {
             Type type when type.Equals(typeof(CreateTaskCommand)) => new CreateTaskCommand()
             {
-                Description = args[1],
-                DueDate = this.ParseDate(args[2]),
-                State = Utils.ParseStringAs<State>(args[3]),
+                Description = agendaCommand.Description,
+                DueDate = agendaCommand.DueDate,
+                State = agendaCommand.State,
             },
             Type type when type.Equals(typeof(ReadTaskQuery)) => new ReadTaskQuery()
             {
-                Id = args[1],
+                Id = agendaCommand.Id!.Value,
             },
             Type type when type.Equals(typeof(ReadTasksQuery)) => new ReadTasksQuery(),
             Type type when type.Equals(typeof(DeleteTaskCommand)) => new DeleteTaskCommand()
             {
-                Id = args[1],
+                Id = agendaCommand.Id.ToString(),
             },
-            _ => throw new Exception("C'est quoi ce message ?"), // TODO
+            _ => throw new UnknownMessageException(typeof(T)),
         };
         return command as T;
     }
 
-    // TODO: responsabilité du handler
-    private DateTimeOffset ParseDate(string date)
-    {
-        if (int.TryParse(date, out int dueDateInDays))
-        {
-            if (dueDateInDays <= 0)
-            {
-                throw new Exception(""); // TODO
-            }
-            return DateTimeOffset.Now.AddDays(dueDateInDays);
-        }
-        else
-        {
-            throw new Exception(""); // TODO
-        }
-    }
+    /**
+     * other domains parser methods
+     */
 }

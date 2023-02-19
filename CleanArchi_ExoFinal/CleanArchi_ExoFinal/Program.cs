@@ -8,4 +8,9 @@ Bootstrap.Seed();
 Context context = new Context(new JsonRepository("tasks.json"));
 HandlersProcessor handlersProcessor = new HandlersProcessor(context);
 
-new ConsoleEngine(handlersProcessor).Run();
+AgendaCommandParser agendaCommandParser = new AgendaCommandParser();
+ConsoleEngine consoleEngine = new ConsoleEngine(
+    agendaCommandParser,
+    handlersProcessor);
+
+consoleEngine.Run();

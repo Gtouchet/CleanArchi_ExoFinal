@@ -14,26 +14,26 @@ public static class Bootstrap
                 Description = "init a project to create an app for my tasks",
                 CreationDate = DateTimeOffset.Now.AddDays(-1),
                 DueDate = DateTimeOffset.Now.AddHours(-8),
-                State = State.done,
+                State = State.Done,
                 Subtasks = new List<TaskEntity>()
                 {
                     new TaskEntity()
                     {
                         Description = "init repo for the project",
                         CreationDate = DateTimeOffset.Now.AddDays(-1),
-                        State = State.done,
+                        State = State.Done,
                     },
                     new TaskEntity()
                     {
                         Description = "create solution and project",
                         CreationDate = DateTimeOffset.Now.AddDays(-1),
-                        State = State.done,
+                        State = State.Done,
                     },
                     new TaskEntity()
                     {
                         Description = "create a small poc to test formats",
                         CreationDate = DateTimeOffset.Now.AddDays(-1),
-                        State = State.progress,
+                        State = State.Progress,
                     }
                 }
             },

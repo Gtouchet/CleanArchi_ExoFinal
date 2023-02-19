@@ -1,11 +1,39 @@
 [
   {
-    "Description": "ma tache",
-    "CreationDate": "2023-02-18T15:08:41.8861561+01:00",
-    "DueDate": "2023-02-23T15:08:41.8846748+01:00",
+    "Description": "init a project to create an app for my tasks",
+    "CreationDate": "2023-02-18T16:02:51.7464266+01:00",
+    "DueDate": "2023-02-19T08:02:51.7464759+01:00",
     "CloseDate": null,
     "State": 3,
-    "Subtasks": [],
-    "Id": "17ace9fc-00ee-498c-bb77-09894071f010"
+    "Subtasks": [
+      {
+        "Description": "init repo for the project",
+        "CreationDate": "2023-02-18T16:02:51.7465474+01:00",
+        "DueDate": null,
+        "CloseDate": null,
+        "State": 3,
+        "Subtasks": [],
+        "Id": "f84793fd-b825-4db8-ac7f-f8441c7f1187"
+      },
+      {
+        "Description": "create solution and project",
+        "CreationDate": "2023-02-18T16:02:51.746551+01:00",
+        "DueDate": null,
+        "CloseDate": null,
+        "State": 3,
+        "Subtasks": [],
+        "Id": "73f0556f-7e36-478b-8749-9dcb7cb966e8"
+      },
+      {
+        "Description": "create a small poc to test formats",
+        "CreationDate": "2023-02-18T16:02:51.7465514+01:00",
+        "DueDate": null,
+        "CloseDate": null,
+        "State": 2,
+        "Subtasks": [],
+        "Id": "332fbda6-2de1-4297-8f15-3698124316db"
+      }
+    ],
+    "Id": "ea2c9432-8e1f-418c-96d6-c33f59e304b4"
   }
 ]

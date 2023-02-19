@@ -7,7 +7,7 @@ namespace CleanArchi_ExoFinal.Application.Handlers.QueryHandlers;
 
 public class ReadTaskQuery : Message
 {
-    public string? Id { get; set; }
+    public Guid Id { get; set; }
 }
 
 public class ReadTaskQueryHandler : QueryBase, IQueryHandler<TaskEntity, ReadTaskQuery>
@@ -16,10 +16,10 @@ public class ReadTaskQueryHandler : QueryBase, IQueryHandler<TaskEntity, ReadTas
 
     public TaskEntity Handle(ReadTaskQuery message)
     {
-        if (!this.Context.Tasks.Exists(Guid.Parse(message.Id!)))
+        if (!this.Context.Tasks.Exists(message.Id))
         {
             throw new HandlerException($"Task id {message.Id} not found");
         }
-        return this.Context.Tasks.Read(Guid.Parse(message.Id!))!;
+        return this.Context.Tasks.Read(message.Id)!;
     }
 }

@@ -40,8 +40,9 @@ then show the result and then quit the app (there is no interactive interface hi
 commands within the process of execution of the app)
 
 example of executions :
-- `agenda add -c "hello world"`
-- `agenda add -d:2022-03-01 -c "finalize the agenda exercise"`
+- `agenda create -c:"hello world"`
+- `agenda create -d:2022-03-01 -c:"finalize the agenda exercise"`
+- `agenda add 123 -d:2022-03-01 -c:"finalize the agenda exercise" -s:done`
 - `agenda list`
 - `agenda update 123 -d:2022-04-01`
 - `agenda remove 123`

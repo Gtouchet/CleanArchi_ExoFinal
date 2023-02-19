@@ -2,6 +2,7 @@
 
 namespace CleanArchi_ExoFinal.Infrastructure.CLI
 {
+    // todo à refaire
     public enum CommandErrorMessage
     {
         [Description("create command needs 4 arguments : create, description, dueDate, state")]
@@ -12,6 +13,10 @@ namespace CleanArchi_ExoFinal.Infrastructure.CLI
         readall,
         [Description("delete command needs 2 arguments : delete, guid")]
         delete,
+        [Description("command not recognized")]
+        CommandNotRecognized,
+        [Description("not enough arguments")]
+        NotEnoughArguments,
     }
 
     public class WrongParametersForCommandException : Exception
