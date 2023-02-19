@@ -1,6 +1,6 @@
-namespace CleanArchi_ExoFinal.Infrastructure.CLI.jeSaisPasOuLesMettre;
+namespace CleanArchi_ExoFinal.Infrastructure.CLI;
 
-public enum EDomain
+public enum CliCommand
 {
     Unknown,
     Agenda,
@@ -11,6 +11,6 @@ public class UnkownDomainException : Exception
 {
     public UnkownDomainException(string message) : base(message)
     {
-        
+
     }
 }

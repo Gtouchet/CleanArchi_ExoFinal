@@ -10,7 +10,7 @@ public class ReadTaskQuery : Query
     public Guid Id { get; set; }
 }
 
-public class ReadTaskQueryHandler : QueryBase, IQueryHandler<TaskEntity, ReadTaskQuery>
+public class ReadTaskQueryHandler : QueryHandlerBase, IQueryHandler<TaskEntity, ReadTaskQuery>
 {
     public ReadTaskQueryHandler(Context context) : base(context) { }
 

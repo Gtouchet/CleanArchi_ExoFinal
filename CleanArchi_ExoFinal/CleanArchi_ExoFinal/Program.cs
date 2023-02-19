@@ -5,8 +5,8 @@ using CleanArchi_ExoFinal.Infrastructure.Repositories;
 
 Bootstrap.Seed();
 
-Context context = new Context(new JsonRepository("tasks.json"));
-HandlersProcessor handlersProcessor = new HandlersProcessor(context);
+Context context = new Context(new TaskJsonRepository("tasks.json"));
+HandlersProcessor handlersProcessor = new HandlersProcessor(context, Logger.GetInstance());
 
 AgendaCommandParser agendaCommandParser = new AgendaCommandParser();
 ConsoleEngine consoleEngine = new ConsoleEngine(

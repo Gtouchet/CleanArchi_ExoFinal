@@ -2,11 +2,11 @@
 
 namespace CleanArchi_ExoFinal.Application.Kernel;
 
-public abstract class QueryBase
+public abstract class QueryHandlerBase
 {
     protected readonly Context Context;
-
-    public QueryBase(Context context)
+    
+    public QueryHandlerBase(Context context)
     {
         this.Context = context;
     }

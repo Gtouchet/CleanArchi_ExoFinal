@@ -3,11 +3,11 @@ using System.Text.Json;
 
 namespace CleanArchi_ExoFinal.Infrastructure.Repositories;
 
-public class JsonRepository : IRepository<TaskEntity>
+public class TaskJsonRepository : IRepository<TaskEntity>
 {
     private readonly string filepath;
 
-    public JsonRepository(string filepath)
+    public TaskJsonRepository(string filepath)
     {
         this.filepath = filepath;
     }

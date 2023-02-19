@@ -15,12 +15,14 @@ internal class UpdateTaskCommand : Command
     public State? State { get; set; }
 }
 
-internal class UpdateTaskCommandHandler : CommandBase, ICommandHandler<Void, UpdateTaskCommand>
+internal class UpdateTaskCommandHandler : CommandHandlerBase, ICommandHandler<Void, UpdateTaskCommand>
 {
-    public UpdateTaskCommandHandler(Context context) : base(context) { }
+    public UpdateTaskCommandHandler(Context context, Logger logger) : base(context, logger) { }
 
     public Void Handle(UpdateTaskCommand message)
     {
+        this.Logger.Log($"{this.GetType().Name} called on task ID {message.Id}");
+
         TaskEntity? task = this.Context.Tasks.Read(message.Id);
         if (task != null)
         {

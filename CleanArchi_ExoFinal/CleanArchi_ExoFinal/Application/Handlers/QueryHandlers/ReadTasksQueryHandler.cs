@@ -10,7 +10,7 @@ public class ReadTasksQuery : Query
     
 }
 
-public class ReadTasksQueryHandler : QueryBase, IQueryHandler<List<TaskEntity>, ReadTasksQuery>
+public class ReadTasksQueryHandler : QueryHandlerBase, IQueryHandler<List<TaskEntity>, ReadTasksQuery>
 {
     public ReadTasksQueryHandler(Context context) : base(context) { }
 

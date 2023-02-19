@@ -2,12 +2,16 @@
 
 namespace CleanArchi_ExoFinal.Application.Kernel;
 
-public abstract class CommandBase
+public abstract class CommandHandlerBase
 {
     protected readonly Context Context;
+    protected readonly Logger Logger;
 
-    public CommandBase(Context context)
+    public CommandHandlerBase(
+        Context context,
+        Logger logger)
     {
         this.Context = context;
+        this.Logger = logger;
     }
 }

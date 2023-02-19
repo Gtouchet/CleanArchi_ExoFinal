@@ -10,12 +10,14 @@ public class DeleteTaskCommand : Command
     public string? Id { get; set; }
 }
 
-public class DeleteTaskCommandHandler : CommandBase, ICommandHandler<bool, DeleteTaskCommand>
+public class DeleteTaskCommandHandler : CommandHandlerBase, ICommandHandler<bool, DeleteTaskCommand>
 {
-    public DeleteTaskCommandHandler(Context context) : base(context) { }
+    public DeleteTaskCommandHandler(Context context, Logger logger) : base(context, logger) { }
 
     public bool Handle(DeleteTaskCommand message)
     {
+        this.Logger.Log($"{this.GetType().Name} called on task ID {message.Id}");
+
         return this.Context.Tasks.Delete(Guid.Parse(message.Id!));
     }
 }

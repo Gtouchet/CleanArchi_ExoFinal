@@ -25,8 +25,8 @@ public class ConsoleEngine : ConsoleManager
     {
         this.WriteLine("bonjour TODO tuto comment ca marche ?");
         
-        (EDomain, string?) userInput = this.GetUserCommand();
-        while (!userInput.Item1.Equals(EDomain.Quit))
+        (CliCommand, string?) userInput = this.GetUserCommand();
+        while (!userInput.Item1.Equals(CliCommand.Quit))
         {
             try
             {
@@ -40,27 +40,27 @@ public class ConsoleEngine : ConsoleManager
         }
     }
 
-    private (EDomain, string?) GetUserCommand()
+    private (CliCommand, string?) GetUserCommand()
     {
         this.Write("> ");
         string? input = this.Read();
         if (input != null)
         {
-            Enum.TryParse(input.Split(" ")[0], ignoreCase: true, out EDomain domain);
+            Enum.TryParse(input.Split(" ")[0], ignoreCase: true, out CliCommand domain);
             return (domain, input);
         }
         else
         {
-            return (default(EDomain), null);
+            return (default(CliCommand), null);
         }
     }
 
-    private void ProcessCommand(EDomain domain, string? userCommand)
+    private void ProcessCommand(CliCommand domain, string? userCommand)
     {
         switch (domain)
         {
-           case EDomain.Agenda: this.InterpretAgendaCommand(userCommand!); break;
-           // other domains
+           case CliCommand.Agenda: this.InterpretAgendaCommand(userCommand!); break;
+           // other commands
            default: throw new UnkownDomainException($"Error, unknown domain");
         }
     }
@@ -89,14 +89,14 @@ public class ConsoleEngine : ConsoleManager
                 this.handlersProcessor.ExecuteCommand(this.ParseAgendaCommandAs<DeleteTaskCommand>(agendaCommand)!);
                 break;
             case EAgendaCommand.Add:
-                this.handlersProcessor.Execute(this.ParseAgendaCommandAs<AddSubTaskCommand>(agendaCommand)!);
+                this.handlersProcessor.ExecuteCommand(this.ParseAgendaCommandAs<AddSubTaskCommand>(agendaCommand)!);
                 break;
             default: throw new Exception(""); // TODO
         }
     }
 
     /**
-     * other domains interpreter methods
+     * other commands interpreter methods
      */
     
     private T? ParseAgendaCommandAs<T>(AgendaCommand agendaCommand) where T : Message
@@ -138,6 +138,6 @@ public class ConsoleEngine : ConsoleManager
     }
 
     /**
-     * other domains parser methods
+     * other commands parser methods
      */
 }

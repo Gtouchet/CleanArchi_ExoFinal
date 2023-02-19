@@ -12,12 +12,14 @@ public class CreateTaskCommand : Command
     public State? State { get; set; }
 }
 
-public class CreateTaskCommandHandler : CommandBase, ICommandHandler<Guid, CreateTaskCommand>
+public class CreateTaskCommandHandler : CommandHandlerBase, ICommandHandler<Guid, CreateTaskCommand>
 {
-    public CreateTaskCommandHandler(Context context) : base(context) { }
+    public CreateTaskCommandHandler(Context context, Logger logger) : base(context, logger) { }
     
     public Guid Handle(CreateTaskCommand message)
     {
+        this.Logger.Log($"{this.GetType().Name} called");
+        
         return this.Context.Tasks.Write(new TaskEntity()
         {
             Description = message.Description ?? "No description",

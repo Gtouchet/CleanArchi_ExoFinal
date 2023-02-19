@@ -17,12 +17,14 @@ public class HandlerException : Exception
 #pragma warning disable CS8602, CS8603, CS8597
 public class HandlersProcessor
 {
-    private readonly List<CommandBase> commands;
-    private readonly List<QueryBase> queries;
+    private readonly List<CommandHandlerBase> commands;
+    private readonly List<QueryHandlerBase> queries;
 
-    public HandlersProcessor(Context context)
+    public HandlersProcessor(
+        Context context,
+        Logger logger)
     {
-        this.commands = this.InitializeCommands(context);
+        this.commands = this.InitializeCommands(context, logger);
         this.queries = this.InitializeQueries(context);
     }
 
@@ -35,7 +37,7 @@ public class HandlersProcessor
     /// <exception cref="UnknownHandlerException"></exception>
     public object ExecuteCommand<C>(C command) where C : Command
     {
-        CommandBase? commandHandler = commands
+        CommandHandlerBase? commandHandler = commands
             .FirstOrDefault(c => c.GetType()
                 .GetInterfaces()
                 .Any(i => i.GetGenericArguments()
@@ -66,7 +68,7 @@ public class HandlersProcessor
     /// <exception cref="UnknownHandlerException"></exception>
     public object ExecuteQuery<Q>(Q query) where Q : Query
     {
-        QueryBase? queryHandler = queries
+        QueryHandlerBase? queryHandler = queries
             .FirstOrDefault(c => c.GetType()
                 .GetInterfaces()
                 .Any(i => i.GetGenericArguments()
@@ -93,14 +95,14 @@ public class HandlersProcessor
     /// </summary>
     /// <param name="repository">The repository used to retrieve or write the data</param>
     /// <returns>The list of initialized handlers</returns>
-    private List<CommandBase> InitializeCommands(Context context)
+    private List<CommandHandlerBase> InitializeCommands(Context context, Logger logger)
     {
-        List<CommandBase> commands = new List<CommandBase>();
-        Assembly.GetAssembly(typeof(CommandBase))!
+        List<CommandHandlerBase> commands = new List<CommandHandlerBase>();
+        Assembly.GetAssembly(typeof(CommandHandlerBase))!
             .GetTypes()
-            .Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(CommandBase)))
+            .Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(CommandHandlerBase)))
             .ToList()
-            .ForEach(t => commands.Add((CommandBase)Activator.CreateInstance(t, context)!));
+            .ForEach(t => commands.Add((CommandHandlerBase)Activator.CreateInstance(t, context, logger)!));
         return commands;
     }
 
@@ -109,14 +111,14 @@ public class HandlersProcessor
     /// </summary>
     /// <param name="repository">The repository used to retrieve or write the data</param>
     /// <returns>The list of initialized handlers</returns>
-    private List<QueryBase> InitializeQueries(Context context)
+    private List<QueryHandlerBase> InitializeQueries(Context context)
     {
-        List<QueryBase> queries = new List<QueryBase>();
-        Assembly.GetAssembly(typeof(QueryBase))!
+        List<QueryHandlerBase> queries = new List<QueryHandlerBase>();
+        Assembly.GetAssembly(typeof(QueryHandlerBase))!
             .GetTypes()
-            .Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(QueryBase)))
+            .Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(QueryHandlerBase)))
             .ToList()
-            .ForEach(t => queries.Add((QueryBase)Activator.CreateInstance(t, context)!));
+            .ForEach(t => queries.Add((QueryHandlerBase)Activator.CreateInstance(t, context)!));
         return queries;
     }
 }
