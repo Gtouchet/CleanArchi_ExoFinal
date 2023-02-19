@@ -89,7 +89,7 @@ public class ConsoleEngine : ConsoleManager
                 this.handlersProcessor.Execute(this.ParseAgendaCommandAs<DeleteTaskCommand>(agendaCommand)!);
                 break;
             case EAgendaCommand.Add:
-                // TODO add subtask
+                this.handlersProcessor.Execute(this.ParseAgendaCommandAs<AddSubTaskCommand>(agendaCommand)!);
                 break;
             default: throw new Exception(""); // TODO
         }
@@ -124,6 +124,13 @@ public class ConsoleEngine : ConsoleManager
             Type type when type.Equals(typeof(DeleteTaskCommand)) => new DeleteTaskCommand()
             {
                 Id = agendaCommand.Id.ToString(),
+            },
+            Type type when type.Equals(typeof(AddSubTaskCommand)) => new AddSubTaskCommand()
+            {
+                TaskId = agendaCommand.Id!.Value,
+                Description = agendaCommand.Description,
+                DueDate = agendaCommand.DueDate,
+                State = agendaCommand.State,
             },
             _ => throw new UnknownMessageException(typeof(T)),
         };

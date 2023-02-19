@@ -42,6 +42,7 @@ public class JsonRepository : IRepository<TaskEntity>
             task.Description = data.Description;
             task.DueDate = data.DueDate;
             task.State = data.State;
+            task.Subtasks = data.Subtasks;
         }
         string json = JsonSerializer.Serialize(tasks, new JsonSerializerOptions() { WriteIndented = true });
         File.WriteAllText(filepath, json);
