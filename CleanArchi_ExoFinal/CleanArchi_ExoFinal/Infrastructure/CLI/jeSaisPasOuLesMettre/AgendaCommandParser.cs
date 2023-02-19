@@ -40,16 +40,13 @@ public class AgendaCommandParser
         string patternDueDate = @"-d:\d{4}-\d{2}-\d{2}";
         string patternDescription = @"-c:""(.+?)""";
         string patternState = @"-s:\w+";
-        string patternId = @"-id:[A-F0-9]{8}-([A-F0-9]{4}-){3}[A-F0-9]{12}";
+        string patternId = @"-id:[a-f0-9]{8}-([a-f0-9]{4}-){3}[a-f0-9]{12}";
 
         agendaCommand.DueDate = Regex.Match(input, patternDueDate).Value != "" ? DateTime.Parse(Regex.Match(input, patternDueDate).Value.Remove(0, 3)) : null;
-        agendaCommand.Description = Regex.Match(input, patternDescription)?.Groups[1].Value;
-        agendaCommand.State = Regex.Match(input, patternState)?.Value != "" ? (State)Enum.Parse(typeof(State), Regex.Match(input, patternState).Value.Remove(0, 3), ignoreCase: true) : default(State);
-
-        Console.WriteLine(Regex.Match(input, patternId).Value.Remove(0, 4));
+        agendaCommand.Description = Regex.Match(input, patternDescription)?.Groups[1].Value != "" ? Regex.Match(input, patternDescription).Groups[1].Value : null;
+        agendaCommand.State = Regex.Match(input, patternState)?.Value != "" ? (State)Enum.Parse(typeof(State), Regex.Match(input, patternState).Value.Remove(0, 3), ignoreCase: true) : null;
+        agendaCommand.Id = Regex.Match(input, patternId)?.Value != "" ? Guid.Parse(Regex.Match(input.Trim(), patternId).Value.Remove(0, 4)) : null;
         
-        agendaCommand.Id = Regex.Match(input, patternId)?.Value != "" ? Guid.Parse(Regex.Match(input, patternId).Value.Remove(0, 4)) : null;
-
         return agendaCommand;
     }
 }

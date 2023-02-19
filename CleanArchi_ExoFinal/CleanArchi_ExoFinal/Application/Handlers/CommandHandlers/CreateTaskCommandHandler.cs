@@ -9,7 +9,7 @@ public class CreateTaskCommand : Message
 {
     public string? Description { get; set; }
     public DateTimeOffset? DueDate { get; set; }
-    public State State { get; set; }
+    public State? State { get; set; }
 }
 
 public class CreateTaskCommandHandler : CommandBase, ICommandHandler<Guid, CreateTaskCommand>
@@ -20,9 +20,9 @@ public class CreateTaskCommandHandler : CommandBase, ICommandHandler<Guid, Creat
     {
         return this.Context.Tasks.Write(new TaskEntity()
         {
-            Description = message.Description,
+            Description = message.Description ?? "No description",
             DueDate = message.DueDate,
-            State = message.State,
+            State = message.State ?? default,
         });
     }
 }

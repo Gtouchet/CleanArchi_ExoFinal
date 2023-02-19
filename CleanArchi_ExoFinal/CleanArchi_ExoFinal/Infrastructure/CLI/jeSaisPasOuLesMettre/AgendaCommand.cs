@@ -8,7 +8,7 @@ public struct AgendaCommand
     public Guid? Id;
     public string? Description;
     public DateTime? DueDate;
-    public State State;
+    public State? State;
 }
 
 public enum EAgendaCommand

@@ -2,7 +2,6 @@
 
 namespace CleanArchi_ExoFinal.Infrastructure.CLI
 {
-    // todo à refaire
     public enum CommandErrorMessage
     {
         [Description("create command needs 4 arguments : create, description, dueDate, state")]

@@ -22,7 +22,7 @@ internal class UpdateTaskCommandHandler : CommandBase, ICommandHandler<Void, Upd
     public Void Handle(UpdateTaskCommand message)
     {
         TaskEntity? task = this.Context.Tasks.Read(message.Id);
-        if (task is not null)
+        if (task != null)
         {
             task.Description = message.Description ?? task.Description;
             task.DueDate = message.DueDate ?? task.DueDate;

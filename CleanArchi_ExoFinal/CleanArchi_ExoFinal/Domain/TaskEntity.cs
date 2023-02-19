@@ -14,11 +14,11 @@ public enum State
 
 public class TaskEntity : Entity
 {
-    public string Description { get; set; } = "No description";
+    public string Description { get; set; } = string.Empty;
     public DateTimeOffset CreationDate { get; set; } = DateTimeOffset.Now;
     public DateTimeOffset? DueDate { get; set; }
     public DateTimeOffset? CloseDate { get; set; }
-    public State State { get; set; } = default(State);
+    public State State { get; set; } = default;
     public List<TaskEntity> Subtasks { get; set; } = new List<TaskEntity>();
 
     public override string ToString()

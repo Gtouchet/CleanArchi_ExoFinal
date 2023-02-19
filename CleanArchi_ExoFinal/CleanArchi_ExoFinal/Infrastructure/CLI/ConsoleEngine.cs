@@ -1,4 +1,4 @@
-﻿using CleanArchi_ExoFinal.Application;
+using CleanArchi_ExoFinal.Application;
 using CleanArchi_ExoFinal.Application.Handlers.CommandHandlers;
 using CleanArchi_ExoFinal.Application.Handlers.QueryHandlers;
 using CleanArchi_ExoFinal.Application.Kernel;
@@ -114,6 +114,13 @@ public class ConsoleEngine : ConsoleManager
                 Id = agendaCommand.Id!.Value,
             },
             Type type when type.Equals(typeof(ReadTasksQuery)) => new ReadTasksQuery(),
+            Type type when type.Equals(typeof(UpdateTaskCommand)) => new UpdateTaskCommand()
+            {
+                Id = agendaCommand.Id!.Value,
+                Description = agendaCommand.Description,
+                DueDate = agendaCommand.DueDate,
+                State = agendaCommand.State,
+            },
             Type type when type.Equals(typeof(DeleteTaskCommand)) => new DeleteTaskCommand()
             {
                 Id = agendaCommand.Id.ToString(),
