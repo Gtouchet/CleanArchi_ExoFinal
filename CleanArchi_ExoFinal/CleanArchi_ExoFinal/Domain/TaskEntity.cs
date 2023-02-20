@@ -26,7 +26,7 @@ public class TaskEntity : Entity
         StringBuilder task = new StringBuilder(
             $"\n{this.Id}\n" +
             $"{this.Description} -> {this.State}\n" +
-            $"Created {this.CreationDate.ToString("dd/mm/yyyy")} -> Due date {this.DueDate?.ToString("dd/mm/yyyy")} " +
+            $"Created {this.CreationDate.ToString("D")} -> Due date {this.DueDate?.ToString("D")} " +
             $"({(this.DueDate != null ? "Due in : " + (this.DueDate - this.CreationDate).Value.Days.ToString() + " days" : "No deadline")})\n" +
             $"Subtasks : ");
 

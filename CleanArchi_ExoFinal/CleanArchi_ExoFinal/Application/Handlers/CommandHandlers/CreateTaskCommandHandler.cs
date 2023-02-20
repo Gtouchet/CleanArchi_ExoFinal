@@ -1,4 +1,5 @@
-﻿using CleanArchi_ExoFinal.Application.Kernel;
+﻿using CleanArchi_ExoFinal.Application;
+using CleanArchi_ExoFinal.Application.Kernel;
 using CleanArchi_ExoFinal.Domain;
 using CleanArchi_ExoFinal.Infrastructure.Repositories;
 using CleanArchi_ExoFinal.Kernel;
@@ -20,6 +21,11 @@ public class CreateTaskCommandHandler : CommandHandlerBase, ICommandHandler<Guid
     {
         this.Logger.Log($"{this.GetType().Name} called");
         
+        if (message.DueDate != null && message.DueDate < DateTimeOffset.Now)
+        {
+            throw new HandlerException("Due date cannot be before now");
+        }
+
         return this.Context.Tasks.Write(new TaskEntity()
         {
             Description = message.Description ?? "No description",

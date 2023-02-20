@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "Description": "do a clean archi",
+    "CreationDate": "2023-02-20T10:55:48.7644344+01:00",
+    "DueDate": "2023-02-25T10:55:48.7702908+01:00",
+    "CloseDate": null,
+    "State": 0,
+    "Subtasks": [],
+    "Id": "aa72f27a-fe19-4273-bb27-983d0c8fbca0"
+  },
+  {
+    "Description": "init a project to create an app for my tasks",
+    "CreationDate": "2023-02-20T10:55:48.7704222+01:00",
+    "DueDate": "2023-02-22T10:55:48.7704252+01:00",
+    "CloseDate": null,
+    "State": 3,
+    "Subtasks": [
+      {
+        "Description": "init repo for the project",
+        "CreationDate": "2023-02-20T10:55:48.7704265+01:00",
+        "DueDate": "2023-02-22T10:55:48.770427+01:00",
+        "CloseDate": null,
+        "State": 3,
+        "Subtasks": [],
+        "Id": "1dce77bd-2a32-4316-8334-bdb266d32e38"
+      }
+    ],
+    "Id": "41005226-e295-43e3-b79e-c5d9241898a7"
+  }
+]

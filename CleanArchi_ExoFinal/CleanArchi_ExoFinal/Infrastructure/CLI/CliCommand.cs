@@ -7,9 +7,9 @@ public enum CliCommand
     Quit,
 }
 
-public class UnkownDomainException : Exception
+public class UnkownCommandException : Exception
 {
-    public UnkownDomainException(string message) : base(message)
+    public UnkownCommandException(string message) : base(message)
     {
 
     }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.487025948103792" branch-rate="0.312" lines-covered="244" lines-valid="501" branches-covered="39" branches-valid="125" complexity="187" version="0" timestamp="1676831310">
+<coverage line-rate="0.641544117647059" branch-rate="0.485074626865672" lines-covered="349" lines-valid="544" branches-covered="65" branches-valid="134" complexity="203" version="0" timestamp="1676890663">
   <sources>
     <source>E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\</source>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="CleanArchi_ExoFinal" line-rate="0.37192118226601" branch-rate="0.300813008130081" complexity="172">
+    <package name="CleanArchi_ExoFinal" line-rate="0.531707317073171" branch-rate="0.477272727272727" complexity="181">
       <classes>
         <class name="CleanArchi_ExoFinal.Application.HandlerException" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Application\HandlersProcessor.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
@@ -73,12 +73,12 @@
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="15" branch="false" />
+                <line number="18" hits="27" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="18" hits="15" branch="false" />
+            <line number="18" hits="27" branch="false" />
             <line number="21" hits="1" branch="false" />
             <line number="22" hits="1" branch="false" />
             <line number="24" hits="1" branch="false" />
@@ -146,12 +146,12 @@
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="15" branch="false" />
+                <line number="20" hits="27" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="20" hits="15" branch="false" />
+            <line number="20" hits="27" branch="false" />
             <line number="23" hits="1" branch="false" />
             <line number="24" hits="1" branch="false" />
             <line number="26" hits="1" branch="false" />
@@ -192,12 +192,12 @@
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="15" branch="false" />
+                <line number="15" hits="27" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="15" hits="15" branch="false" />
+            <line number="15" hits="27" branch="false" />
             <line number="18" hits="4" branch="false" />
             <line number="19" hits="4" branch="true" condition-coverage="100% (2/2)" />
             <line number="20" hits="1" branch="false" />
@@ -210,204 +210,204 @@
           <methods>
             <method name="Handle" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="1" branch="false" />
-                <line number="19" hits="1" branch="false" />
-                <line number="20" hits="1" branch="false" />
+                <line number="18" hits="3" branch="false" />
+                <line number="19" hits="3" branch="false" />
+                <line number="20" hits="3" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="15" branch="false" />
+                <line number="15" hits="27" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="15" hits="15" branch="false" />
-            <line number="18" hits="1" branch="false" />
-            <line number="19" hits="1" branch="false" />
-            <line number="20" hits="1" branch="false" />
+            <line number="15" hits="27" branch="false" />
+            <line number="18" hits="3" branch="false" />
+            <line number="19" hits="3" branch="false" />
+            <line number="20" hits="3" branch="false" />
           </lines>
         </class>
         <class name="CleanArchi_ExoFinal.Application.HandlersProcessor" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Application\HandlersProcessor.cs" line-rate="0.87719298245614" branch-rate="0.916666666666667" complexity="25">
           <methods>
             <method name="ExecuteCommand" signature="(...)" line-rate="0.6875" branch-rate="0.875" complexity="8">
               <lines>
-                <line number="39" hits="8" branch="false" />
-                <line number="40" hits="8" branch="true" condition-coverage="100% (2/2)" />
-                <line number="41" hits="22" branch="true" condition-coverage="100% (2/2)" />
-                <line number="42" hits="22" branch="false" />
-                <line number="43" hits="36" branch="true" condition-coverage="100% (2/2)" />
-                <line number="44" hits="64" branch="false" />
-                <line number="46" hits="8" branch="false" />
-                <line number="47" hits="8" branch="true" condition-coverage="50% (1/2)" />
-                <line number="48" hits="8" branch="false" />
-                <line number="49" hits="8" branch="false" />
+                <line number="39" hits="11" branch="false" />
+                <line number="40" hits="11" branch="true" condition-coverage="100% (2/2)" />
+                <line number="41" hits="28" branch="true" condition-coverage="100% (2/2)" />
+                <line number="42" hits="28" branch="false" />
+                <line number="43" hits="45" branch="true" condition-coverage="100% (2/2)" />
+                <line number="44" hits="79" branch="false" />
+                <line number="46" hits="11" branch="false" />
+                <line number="47" hits="11" branch="true" condition-coverage="50% (1/2)" />
+                <line number="48" hits="11" branch="false" />
+                <line number="49" hits="11" branch="false" />
                 <line number="52" hits="0" branch="false" />
                 <line number="53" hits="0" branch="false" />
                 <line number="56" hits="0" branch="false" />
                 <line number="57" hits="0" branch="false" />
                 <line number="58" hits="0" branch="false" />
-                <line number="60" hits="8" branch="false" />
+                <line number="60" hits="11" branch="false" />
               </lines>
             </method>
             <method name="ExecuteQuery" signature="(...)" line-rate="0.875" branch-rate="0.875" complexity="8">
               <lines>
-                <line number="70" hits="5" branch="false" />
-                <line number="71" hits="5" branch="true" condition-coverage="100% (2/2)" />
-                <line number="72" hits="11" branch="true" condition-coverage="100% (2/2)" />
-                <line number="73" hits="11" branch="false" />
-                <line number="74" hits="17" branch="true" condition-coverage="100% (2/2)" />
-                <line number="75" hits="29" branch="false" />
-                <line number="77" hits="5" branch="false" />
-                <line number="78" hits="5" branch="true" condition-coverage="50% (1/2)" />
-                <line number="79" hits="5" branch="false" />
-                <line number="80" hits="5" branch="false" />
+                <line number="70" hits="7" branch="false" />
+                <line number="71" hits="7" branch="true" condition-coverage="100% (2/2)" />
+                <line number="72" hits="17" branch="true" condition-coverage="100% (2/2)" />
+                <line number="73" hits="17" branch="false" />
+                <line number="74" hits="27" branch="true" condition-coverage="100% (2/2)" />
+                <line number="75" hits="47" branch="false" />
+                <line number="77" hits="7" branch="false" />
+                <line number="78" hits="7" branch="true" condition-coverage="50% (1/2)" />
+                <line number="79" hits="7" branch="false" />
+                <line number="80" hits="7" branch="false" />
                 <line number="83" hits="0" branch="false" />
                 <line number="84" hits="0" branch="false" />
                 <line number="87" hits="1" branch="false" />
                 <line number="88" hits="1" branch="false" />
                 <line number="89" hits="1" branch="false" />
-                <line number="91" hits="4" branch="false" />
+                <line number="91" hits="6" branch="false" />
               </lines>
             </method>
             <method name="InitializeCommands" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
               <lines>
-                <line number="99" hits="5" branch="false" />
-                <line number="100" hits="5" branch="false" />
-                <line number="101" hits="5" branch="false" />
-                <line number="102" hits="5" branch="false" />
-                <line number="103" hits="285" branch="true" condition-coverage="100% (4/4)" />
-                <line number="104" hits="5" branch="false" />
-                <line number="105" hits="25" branch="false" />
-                <line number="106" hits="5" branch="false" />
-                <line number="107" hits="5" branch="false" />
+                <line number="99" hits="9" branch="false" />
+                <line number="100" hits="9" branch="false" />
+                <line number="101" hits="9" branch="false" />
+                <line number="102" hits="9" branch="false" />
+                <line number="103" hits="513" branch="true" condition-coverage="100% (4/4)" />
+                <line number="104" hits="9" branch="false" />
+                <line number="105" hits="45" branch="false" />
+                <line number="106" hits="9" branch="false" />
+                <line number="107" hits="9" branch="false" />
               </lines>
             </method>
             <method name="InitializeQueries" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
               <lines>
-                <line number="115" hits="5" branch="false" />
-                <line number="116" hits="5" branch="false" />
-                <line number="117" hits="5" branch="false" />
-                <line number="118" hits="5" branch="false" />
-                <line number="119" hits="285" branch="true" condition-coverage="100% (4/4)" />
-                <line number="120" hits="5" branch="false" />
-                <line number="121" hits="15" branch="false" />
-                <line number="122" hits="5" branch="false" />
-                <line number="123" hits="5" branch="false" />
+                <line number="115" hits="9" branch="false" />
+                <line number="116" hits="9" branch="false" />
+                <line number="117" hits="9" branch="false" />
+                <line number="118" hits="9" branch="false" />
+                <line number="119" hits="513" branch="true" condition-coverage="100% (4/4)" />
+                <line number="120" hits="9" branch="false" />
+                <line number="121" hits="27" branch="false" />
+                <line number="122" hits="9" branch="false" />
+                <line number="123" hits="9" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="5" branch="false" />
-                <line number="24" hits="5" branch="false" />
-                <line number="25" hits="5" branch="false" />
-                <line number="26" hits="5" branch="false" />
-                <line number="27" hits="5" branch="false" />
-                <line number="28" hits="5" branch="false" />
-                <line number="29" hits="5" branch="false" />
+                <line number="23" hits="9" branch="false" />
+                <line number="24" hits="9" branch="false" />
+                <line number="25" hits="9" branch="false" />
+                <line number="26" hits="9" branch="false" />
+                <line number="27" hits="9" branch="false" />
+                <line number="28" hits="9" branch="false" />
+                <line number="29" hits="9" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="23" hits="5" branch="false" />
-            <line number="24" hits="5" branch="false" />
-            <line number="25" hits="5" branch="false" />
-            <line number="26" hits="5" branch="false" />
-            <line number="27" hits="5" branch="false" />
-            <line number="28" hits="5" branch="false" />
-            <line number="29" hits="5" branch="false" />
-            <line number="39" hits="8" branch="false" />
-            <line number="40" hits="8" branch="true" condition-coverage="100% (2/2)" />
-            <line number="41" hits="22" branch="true" condition-coverage="100% (2/2)" />
-            <line number="42" hits="22" branch="false" />
-            <line number="43" hits="36" branch="true" condition-coverage="100% (2/2)" />
-            <line number="44" hits="64" branch="false" />
-            <line number="46" hits="8" branch="false" />
-            <line number="47" hits="8" branch="true" condition-coverage="50% (1/2)" />
-            <line number="48" hits="8" branch="false" />
-            <line number="49" hits="8" branch="false" />
+            <line number="23" hits="9" branch="false" />
+            <line number="24" hits="9" branch="false" />
+            <line number="25" hits="9" branch="false" />
+            <line number="26" hits="9" branch="false" />
+            <line number="27" hits="9" branch="false" />
+            <line number="28" hits="9" branch="false" />
+            <line number="29" hits="9" branch="false" />
+            <line number="39" hits="11" branch="false" />
+            <line number="40" hits="11" branch="true" condition-coverage="100% (2/2)" />
+            <line number="41" hits="28" branch="true" condition-coverage="100% (2/2)" />
+            <line number="42" hits="28" branch="false" />
+            <line number="43" hits="45" branch="true" condition-coverage="100% (2/2)" />
+            <line number="44" hits="79" branch="false" />
+            <line number="46" hits="11" branch="false" />
+            <line number="47" hits="11" branch="true" condition-coverage="50% (1/2)" />
+            <line number="48" hits="11" branch="false" />
+            <line number="49" hits="11" branch="false" />
             <line number="52" hits="0" branch="false" />
             <line number="53" hits="0" branch="false" />
             <line number="56" hits="0" branch="false" />
             <line number="57" hits="0" branch="false" />
             <line number="58" hits="0" branch="false" />
-            <line number="60" hits="8" branch="false" />
-            <line number="70" hits="5" branch="false" />
-            <line number="71" hits="5" branch="true" condition-coverage="100% (2/2)" />
-            <line number="72" hits="11" branch="true" condition-coverage="100% (2/2)" />
-            <line number="73" hits="11" branch="false" />
-            <line number="74" hits="17" branch="true" condition-coverage="100% (2/2)" />
-            <line number="75" hits="29" branch="false" />
-            <line number="77" hits="5" branch="false" />
-            <line number="78" hits="5" branch="true" condition-coverage="50% (1/2)" />
-            <line number="79" hits="5" branch="false" />
-            <line number="80" hits="5" branch="false" />
+            <line number="60" hits="11" branch="false" />
+            <line number="70" hits="7" branch="false" />
+            <line number="71" hits="7" branch="true" condition-coverage="100% (2/2)" />
+            <line number="72" hits="17" branch="true" condition-coverage="100% (2/2)" />
+            <line number="73" hits="17" branch="false" />
+            <line number="74" hits="27" branch="true" condition-coverage="100% (2/2)" />
+            <line number="75" hits="47" branch="false" />
+            <line number="77" hits="7" branch="false" />
+            <line number="78" hits="7" branch="true" condition-coverage="50% (1/2)" />
+            <line number="79" hits="7" branch="false" />
+            <line number="80" hits="7" branch="false" />
             <line number="83" hits="0" branch="false" />
             <line number="84" hits="0" branch="false" />
             <line number="87" hits="1" branch="false" />
             <line number="88" hits="1" branch="false" />
             <line number="89" hits="1" branch="false" />
-            <line number="91" hits="4" branch="false" />
-            <line number="99" hits="5" branch="false" />
-            <line number="100" hits="5" branch="false" />
-            <line number="101" hits="5" branch="false" />
-            <line number="102" hits="5" branch="false" />
-            <line number="103" hits="285" branch="true" condition-coverage="100% (4/4)" />
-            <line number="104" hits="5" branch="false" />
-            <line number="105" hits="25" branch="false" />
-            <line number="106" hits="5" branch="false" />
-            <line number="107" hits="5" branch="false" />
-            <line number="115" hits="5" branch="false" />
-            <line number="116" hits="5" branch="false" />
-            <line number="117" hits="5" branch="false" />
-            <line number="118" hits="5" branch="false" />
-            <line number="119" hits="285" branch="true" condition-coverage="100% (4/4)" />
-            <line number="120" hits="5" branch="false" />
-            <line number="121" hits="15" branch="false" />
-            <line number="122" hits="5" branch="false" />
-            <line number="123" hits="5" branch="false" />
+            <line number="91" hits="6" branch="false" />
+            <line number="99" hits="9" branch="false" />
+            <line number="100" hits="9" branch="false" />
+            <line number="101" hits="9" branch="false" />
+            <line number="102" hits="9" branch="false" />
+            <line number="103" hits="513" branch="true" condition-coverage="100% (4/4)" />
+            <line number="104" hits="9" branch="false" />
+            <line number="105" hits="45" branch="false" />
+            <line number="106" hits="9" branch="false" />
+            <line number="107" hits="9" branch="false" />
+            <line number="115" hits="9" branch="false" />
+            <line number="116" hits="9" branch="false" />
+            <line number="117" hits="9" branch="false" />
+            <line number="118" hits="9" branch="false" />
+            <line number="119" hits="513" branch="true" condition-coverage="100% (4/4)" />
+            <line number="120" hits="9" branch="false" />
+            <line number="121" hits="27" branch="false" />
+            <line number="122" hits="9" branch="false" />
+            <line number="123" hits="9" branch="false" />
           </lines>
         </class>
         <class name="CleanArchi_ExoFinal.Application.Kernel.CommandHandlerBase" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Application\Kernel\CommandHandlerBase.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="20" branch="false" />
-                <line number="11" hits="20" branch="false" />
-                <line number="12" hits="20" branch="false" />
-                <line number="13" hits="20" branch="false" />
-                <line number="14" hits="20" branch="false" />
-                <line number="15" hits="20" branch="false" />
-                <line number="16" hits="20" branch="false" />
+                <line number="10" hits="36" branch="false" />
+                <line number="11" hits="36" branch="false" />
+                <line number="12" hits="36" branch="false" />
+                <line number="13" hits="36" branch="false" />
+                <line number="14" hits="36" branch="false" />
+                <line number="15" hits="36" branch="false" />
+                <line number="16" hits="36" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="20" branch="false" />
-            <line number="11" hits="20" branch="false" />
-            <line number="12" hits="20" branch="false" />
-            <line number="13" hits="20" branch="false" />
-            <line number="14" hits="20" branch="false" />
-            <line number="15" hits="20" branch="false" />
-            <line number="16" hits="20" branch="false" />
+            <line number="10" hits="36" branch="false" />
+            <line number="11" hits="36" branch="false" />
+            <line number="12" hits="36" branch="false" />
+            <line number="13" hits="36" branch="false" />
+            <line number="14" hits="36" branch="false" />
+            <line number="15" hits="36" branch="false" />
+            <line number="16" hits="36" branch="false" />
           </lines>
         </class>
         <class name="CleanArchi_ExoFinal.Application.Kernel.QueryHandlerBase" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Application\Kernel\QueryHandlerBase.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="10" branch="false" />
-                <line number="10" hits="10" branch="false" />
-                <line number="11" hits="10" branch="false" />
-                <line number="12" hits="10" branch="false" />
+                <line number="9" hits="18" branch="false" />
+                <line number="10" hits="18" branch="false" />
+                <line number="11" hits="18" branch="false" />
+                <line number="12" hits="18" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="10" branch="false" />
-            <line number="10" hits="10" branch="false" />
-            <line number="11" hits="10" branch="false" />
-            <line number="12" hits="10" branch="false" />
+            <line number="9" hits="18" branch="false" />
+            <line number="10" hits="18" branch="false" />
+            <line number="11" hits="18" branch="false" />
+            <line number="12" hits="18" branch="false" />
           </lines>
         </class>
         <class name="CleanArchi_ExoFinal.Application.Kernel.UnknownMessageException" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Application\Kernel\Message.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -463,16 +463,9 @@
                 <line number="31" hits="0" branch="false" />
                 <line number="32" hits="0" branch="false" />
                 <line number="33" hits="0" branch="false" />
-                <line number="34" hits="0" branch="false" />
                 <line number="35" hits="0" branch="false" />
                 <line number="36" hits="0" branch="false" />
                 <line number="37" hits="0" branch="false" />
-                <line number="38" hits="0" branch="false" />
-                <line number="39" hits="0" branch="false" />
-                <line number="40" hits="0" branch="false" />
-                <line number="42" hits="0" branch="false" />
-                <line number="43" hits="0" branch="false" />
-                <line number="44" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
@@ -502,45 +495,38 @@
             <line number="31" hits="0" branch="false" />
             <line number="32" hits="0" branch="false" />
             <line number="33" hits="0" branch="false" />
-            <line number="34" hits="0" branch="false" />
             <line number="35" hits="0" branch="false" />
             <line number="36" hits="0" branch="false" />
             <line number="37" hits="0" branch="false" />
-            <line number="38" hits="0" branch="false" />
-            <line number="39" hits="0" branch="false" />
-            <line number="40" hits="0" branch="false" />
-            <line number="42" hits="0" branch="false" />
-            <line number="43" hits="0" branch="false" />
-            <line number="44" hits="0" branch="false" />
           </lines>
         </class>
         <class name="CleanArchi_ExoFinal.Domain.Entity" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Domain\Entity.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="22" branch="false" />
+                <line number="5" hits="28" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="22" branch="false" />
+            <line number="5" hits="28" branch="false" />
           </lines>
         </class>
         <class name="CleanArchi_ExoFinal.Domain.TaskEntity" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Domain\TaskEntity.cs" line-rate="0.217391304347826" branch-rate="0" complexity="14">
           <methods>
             <method name="get_Description" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="18" branch="false" />
+                <line number="17" hits="25" branch="false" />
               </lines>
             </method>
             <method name="get_CreationDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="6" branch="false" />
+                <line number="18" hits="9" branch="false" />
               </lines>
             </method>
             <method name="get_DueDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="12" branch="false" />
+                <line number="19" hits="15" branch="false" />
               </lines>
             </method>
             <method name="get_CloseDate" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -550,12 +536,12 @@
             </method>
             <method name="get_State" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="18" branch="false" />
+                <line number="21" hits="24" branch="false" />
               </lines>
             </method>
             <method name="get_Subtasks" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="12" branch="false" />
+                <line number="22" hits="15" branch="false" />
               </lines>
             </method>
             <method name="ToString" signature="()" line-rate="0" branch-rate="0" complexity="8">
@@ -581,12 +567,12 @@
             </method>
           </methods>
           <lines>
-            <line number="17" hits="18" branch="false" />
-            <line number="18" hits="6" branch="false" />
-            <line number="19" hits="12" branch="false" />
+            <line number="17" hits="25" branch="false" />
+            <line number="18" hits="9" branch="false" />
+            <line number="19" hits="15" branch="false" />
             <line number="20" hits="0" branch="false" />
-            <line number="21" hits="18" branch="false" />
-            <line number="22" hits="12" branch="false" />
+            <line number="21" hits="24" branch="false" />
+            <line number="22" hits="15" branch="false" />
             <line number="25" hits="0" branch="false" />
             <line number="26" hits="0" branch="true" condition-coverage="0% (0/6)" />
             <line number="27" hits="0" branch="false" />
@@ -610,58 +596,64 @@
           <methods>
             <method name="get_Description" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="7" branch="false" />
+                <line number="11" hits="13" branch="false" />
               </lines>
             </method>
             <method name="get_DueDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="5" branch="false" />
+                <line number="12" hits="19" branch="false" />
               </lines>
             </method>
             <method name="get_State" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="5" branch="false" />
+                <line number="13" hits="11" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="7" branch="false" />
-            <line number="11" hits="5" branch="false" />
-            <line number="12" hits="5" branch="false" />
+            <line number="11" hits="13" branch="false" />
+            <line number="12" hits="19" branch="false" />
+            <line number="13" hits="11" branch="false" />
           </lines>
         </class>
-        <class name="CleanArchi_ExoFinal.Handlers.CommandHandlers.CreateTaskCommandHandler" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Application\Handlers\CommandHandlers\CreateTaskCommandHandler.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="CleanArchi_ExoFinal.Handlers.CommandHandlers.CreateTaskCommandHandler" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Application\Handlers\CommandHandlers\CreateTaskCommandHandler.cs" line-rate="0.846153846153846" branch-rate="0.5" complexity="9">
           <methods>
-            <method name="Handle" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+            <method name="Handle" signature="(...)" line-rate="0.833333333333333" branch-rate="0.5" complexity="8">
               <lines>
-                <line number="20" hits="5" branch="false" />
-                <line number="21" hits="5" branch="false" />
-                <line number="23" hits="5" branch="true" condition-coverage="100% (2/2)" />
-                <line number="24" hits="5" branch="false" />
-                <line number="25" hits="5" branch="false" />
-                <line number="26" hits="5" branch="false" />
-                <line number="27" hits="5" branch="false" />
-                <line number="28" hits="5" branch="false" />
-                <line number="29" hits="5" branch="false" />
+                <line number="21" hits="8" branch="false" />
+                <line number="22" hits="8" branch="false" />
+                <line number="24" hits="8" branch="true" condition-coverage="33% (2/6)" />
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="29" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="30" hits="8" branch="false" />
+                <line number="31" hits="8" branch="false" />
+                <line number="32" hits="8" branch="false" />
+                <line number="33" hits="8" branch="false" />
+                <line number="34" hits="8" branch="false" />
+                <line number="35" hits="8" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="15" branch="false" />
+                <line number="18" hits="27" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="17" hits="15" branch="false" />
-            <line number="20" hits="5" branch="false" />
-            <line number="21" hits="5" branch="false" />
-            <line number="23" hits="5" branch="true" condition-coverage="100% (2/2)" />
-            <line number="24" hits="5" branch="false" />
-            <line number="25" hits="5" branch="false" />
-            <line number="26" hits="5" branch="false" />
-            <line number="27" hits="5" branch="false" />
-            <line number="28" hits="5" branch="false" />
-            <line number="29" hits="5" branch="false" />
+            <line number="18" hits="27" branch="false" />
+            <line number="21" hits="8" branch="false" />
+            <line number="22" hits="8" branch="false" />
+            <line number="24" hits="8" branch="true" condition-coverage="33% (2/6)" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="29" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="30" hits="8" branch="false" />
+            <line number="31" hits="8" branch="false" />
+            <line number="32" hits="8" branch="false" />
+            <line number="33" hits="8" branch="false" />
+            <line number="34" hits="8" branch="false" />
+            <line number="35" hits="8" branch="false" />
           </lines>
         </class>
         <class name="CleanArchi_ExoFinal.Handlers.CommandHandlers.DeleteTaskCommand" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Application\Handlers\CommandHandlers\DeleteTaskCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
@@ -688,93 +680,93 @@
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="15" branch="false" />
+                <line number="14" hits="27" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="14" hits="15" branch="false" />
+            <line number="14" hits="27" branch="false" />
             <line number="17" hits="1" branch="false" />
             <line number="18" hits="1" branch="false" />
             <line number="20" hits="1" branch="false" />
             <line number="21" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.AgendaCommandParser" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\Agenda\AgendaCommandParser.cs" line-rate="0" branch-rate="0" complexity="30">
+        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.AgendaCommandParser" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\Agenda\AgendaCommandParser.cs" line-rate="0.9" branch-rate="0.53125" complexity="32">
           <methods>
-            <method name="Parse" signature="(...)" line-rate="0" branch-rate="0" complexity="16">
+            <method name="Parse" signature="(...)" line-rate="0.842105263157895" branch-rate="0.555555555555556" complexity="18">
               <lines>
-                <line number="9" hits="0" branch="false" />
-                <line number="10" hits="0" branch="false" />
-                <line number="11" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="9" hits="4" branch="false" />
+                <line number="10" hits="4" branch="false" />
+                <line number="11" hits="4" branch="true" condition-coverage="50% (2/4)" />
                 <line number="12" hits="0" branch="false" />
-                <line number="14" hits="0" branch="false" />
-                <line number="16" hits="0" branch="false" />
-                <line number="17" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="14" hits="4" branch="false" />
+                <line number="16" hits="4" branch="false" />
+                <line number="17" hits="4" branch="true" condition-coverage="50% (1/2)" />
                 <line number="18" hits="0" branch="false" />
-                <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="21" hits="0" branch="false" />
+                <line number="20" hits="4" branch="true" condition-coverage="50% (1/2)" />
+                <line number="21" hits="4" branch="false" />
                 <line number="23" hits="0" branch="false" />
-                <line number="25" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="27" hits="0" branch="false" />
-                <line number="28" hits="0" branch="false" />
-                <line number="29" hits="0" branch="true" condition-coverage="0% (0/4)" />
-                <line number="30" hits="0" branch="false" />
-                <line number="33" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="35" hits="0" branch="false" />
-                <line number="36" hits="0" branch="false" />
+                <line number="25" hits="4" branch="true" condition-coverage="50% (1/2)" />
+                <line number="27" hits="4" branch="false" />
+                <line number="28" hits="4" branch="false" />
+                <line number="29" hits="4" branch="true" condition-coverage="67% (4/6)" />
+                <line number="30" hits="1" branch="false" />
+                <line number="33" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="35" hits="3" branch="false" />
+                <line number="36" hits="3" branch="false" />
               </lines>
             </method>
-            <method name="ParseOptions" signature="(...)" line-rate="0" branch-rate="0" complexity="14">
+            <method name="ParseOptions" signature="(...)" line-rate="1" branch-rate="0.5" complexity="14">
               <lines>
-                <line number="39" hits="0" branch="false" />
-                <line number="40" hits="0" branch="false" />
-                <line number="41" hits="0" branch="false" />
-                <line number="42" hits="0" branch="false" />
-                <line number="43" hits="0" branch="false" />
-                <line number="45" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="46" hits="0" branch="true" condition-coverage="0% (0/4)" />
-                <line number="47" hits="0" branch="true" condition-coverage="0% (0/4)" />
-                <line number="48" hits="0" branch="true" condition-coverage="0% (0/4)" />
-                <line number="50" hits="0" branch="false" />
-                <line number="51" hits="0" branch="false" />
+                <line number="39" hits="3" branch="false" />
+                <line number="40" hits="3" branch="false" />
+                <line number="41" hits="3" branch="false" />
+                <line number="42" hits="3" branch="false" />
+                <line number="43" hits="3" branch="false" />
+                <line number="45" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="46" hits="3" branch="true" condition-coverage="50% (2/4)" />
+                <line number="47" hits="3" branch="true" condition-coverage="50% (2/4)" />
+                <line number="48" hits="3" branch="true" condition-coverage="50% (2/4)" />
+                <line number="50" hits="3" branch="false" />
+                <line number="51" hits="3" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="0" branch="false" />
-            <line number="10" hits="0" branch="false" />
-            <line number="11" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="9" hits="4" branch="false" />
+            <line number="10" hits="4" branch="false" />
+            <line number="11" hits="4" branch="true" condition-coverage="50% (2/4)" />
             <line number="12" hits="0" branch="false" />
-            <line number="14" hits="0" branch="false" />
-            <line number="16" hits="0" branch="false" />
-            <line number="17" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="14" hits="4" branch="false" />
+            <line number="16" hits="4" branch="false" />
+            <line number="17" hits="4" branch="true" condition-coverage="50% (1/2)" />
             <line number="18" hits="0" branch="false" />
-            <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="21" hits="0" branch="false" />
+            <line number="20" hits="4" branch="true" condition-coverage="50% (1/2)" />
+            <line number="21" hits="4" branch="false" />
             <line number="23" hits="0" branch="false" />
-            <line number="25" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="27" hits="0" branch="false" />
-            <line number="28" hits="0" branch="false" />
-            <line number="29" hits="0" branch="true" condition-coverage="0% (0/4)" />
-            <line number="30" hits="0" branch="false" />
-            <line number="33" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="35" hits="0" branch="false" />
-            <line number="36" hits="0" branch="false" />
-            <line number="39" hits="0" branch="false" />
-            <line number="40" hits="0" branch="false" />
-            <line number="41" hits="0" branch="false" />
-            <line number="42" hits="0" branch="false" />
-            <line number="43" hits="0" branch="false" />
-            <line number="45" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="46" hits="0" branch="true" condition-coverage="0% (0/4)" />
-            <line number="47" hits="0" branch="true" condition-coverage="0% (0/4)" />
-            <line number="48" hits="0" branch="true" condition-coverage="0% (0/4)" />
-            <line number="50" hits="0" branch="false" />
-            <line number="51" hits="0" branch="false" />
+            <line number="25" hits="4" branch="true" condition-coverage="50% (1/2)" />
+            <line number="27" hits="4" branch="false" />
+            <line number="28" hits="4" branch="false" />
+            <line number="29" hits="4" branch="true" condition-coverage="67% (4/6)" />
+            <line number="30" hits="1" branch="false" />
+            <line number="33" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="35" hits="3" branch="false" />
+            <line number="36" hits="3" branch="false" />
+            <line number="39" hits="3" branch="false" />
+            <line number="40" hits="3" branch="false" />
+            <line number="41" hits="3" branch="false" />
+            <line number="42" hits="3" branch="false" />
+            <line number="43" hits="3" branch="false" />
+            <line number="45" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="46" hits="3" branch="true" condition-coverage="50% (2/4)" />
+            <line number="47" hits="3" branch="true" condition-coverage="50% (2/4)" />
+            <line number="48" hits="3" branch="true" condition-coverage="50% (2/4)" />
+            <line number="50" hits="3" branch="false" />
+            <line number="51" hits="3" branch="false" />
           </lines>
         </class>
-        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.ConsoleEngine" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\ConsoleEngine.cs" line-rate="0" branch-rate="0" complexity="34">
+        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.ConsoleEngine" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\ConsoleEngine.cs" line-rate="0.297029702970297" branch-rate="0.147058823529412" complexity="35">
           <methods>
             <method name="Run" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -809,99 +801,107 @@
                 <line number="56" hits="0" branch="false" />
               </lines>
             </method>
-            <method name="ProcessCommand" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+            <method name="ProcessCommand" signature="(...)" line-rate="0.8" branch-rate="0.5" complexity="2">
               <lines>
-                <line number="59" hits="0" branch="false" />
-                <line number="60" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="62" hits="0" branch="false" />
+                <line number="59" hits="4" branch="false" />
+                <line number="60" hits="4" branch="true" condition-coverage="50% (1/2)" />
+                <line number="62" hits="7" branch="false" />
                 <line number="64" hits="0" branch="false" />
-                <line number="66" hits="0" branch="false" />
+                <line number="66" hits="3" branch="false" />
               </lines>
             </method>
-            <method name="InterpretAgendaCommand" signature="(...)" line-rate="0" branch-rate="0" complexity="7">
+            <method name="InterpretAgendaCommand" signature="(...)" line-rate="0.25" branch-rate="0.125" complexity="8">
               <lines>
-                <line number="69" hits="0" branch="false" />
-                <line number="70" hits="0" branch="false" />
-                <line number="71" hits="0" branch="true" condition-coverage="0% (0/7)" />
+                <line number="69" hits="4" branch="false" />
+                <line number="70" hits="4" branch="false" />
+                <line number="71" hits="3" branch="true" condition-coverage="13% (1/8)" />
                 <line number="74" hits="0" branch="false" />
                 <line number="75" hits="0" branch="false" />
                 <line number="76" hits="0" branch="false" />
+                <line number="77" hits="0" branch="false" />
                 <line number="78" hits="0" branch="false" />
                 <line number="79" hits="0" branch="false" />
                 <line number="80" hits="0" branch="false" />
-                <line number="82" hits="0" branch="false" />
-                <line number="83" hits="0" branch="false" />
-                <line number="84" hits="0" branch="false" />
-                <line number="86" hits="0" branch="false" />
+                <line number="81" hits="0" branch="false" />
+                <line number="83" hits="3" branch="false" />
+                <line number="84" hits="3" branch="false" />
+                <line number="85" hits="3" branch="false" />
                 <line number="87" hits="0" branch="false" />
+                <line number="88" hits="0" branch="false" />
                 <line number="89" hits="0" branch="false" />
-                <line number="90" hits="0" branch="false" />
+                <line number="91" hits="0" branch="false" />
                 <line number="92" hits="0" branch="false" />
                 <line number="93" hits="0" branch="false" />
-                <line number="94" hits="0" branch="false" />
+                <line number="95" hits="0" branch="false" />
                 <line number="96" hits="0" branch="false" />
+                <line number="98" hits="0" branch="false" />
+                <line number="99" hits="0" branch="false" />
+                <line number="101" hits="0" branch="false" />
+                <line number="102" hits="0" branch="false" />
+                <line number="103" hits="0" branch="false" />
+                <line number="105" hits="3" branch="false" />
               </lines>
             </method>
-            <method name="ParseAgendaCommandAs" signature="(...)" line-rate="0" branch-rate="0" complexity="20">
+            <method name="ParseAgendaCommandAs" signature="(...)" line-rate="0.333333333333333" branch-rate="0.15" complexity="20">
               <lines>
-                <line number="103" hits="0" branch="false" />
-                <line number="104" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="105" hits="0" branch="false" />
-                <line number="106" hits="0" branch="true" condition-coverage="0% (0/4)" />
-                <line number="107" hits="0" branch="false" />
-                <line number="108" hits="0" branch="false" />
-                <line number="109" hits="0" branch="false" />
-                <line number="110" hits="0" branch="false" />
-                <line number="111" hits="0" branch="false" />
-                <line number="112" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="113" hits="0" branch="false" />
-                <line number="114" hits="0" branch="false" />
-                <line number="115" hits="0" branch="false" />
-                <line number="116" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="117" hits="0" branch="true" condition-coverage="0% (0/4)" />
-                <line number="118" hits="0" branch="false" />
-                <line number="119" hits="0" branch="false" />
-                <line number="120" hits="0" branch="false" />
-                <line number="121" hits="0" branch="false" />
+                <line number="112" hits="3" branch="false" />
+                <line number="113" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="114" hits="3" branch="false" />
+                <line number="115" hits="6" branch="true" condition-coverage="50% (2/4)" />
+                <line number="116" hits="3" branch="false" />
+                <line number="117" hits="3" branch="false" />
+                <line number="118" hits="3" branch="false" />
+                <line number="119" hits="3" branch="false" />
+                <line number="120" hits="3" branch="false" />
+                <line number="121" hits="0" branch="true" condition-coverage="0% (0/2)" />
                 <line number="122" hits="0" branch="false" />
                 <line number="123" hits="0" branch="false" />
-                <line number="124" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="125" hits="0" branch="false" />
-                <line number="126" hits="0" branch="false" />
+                <line number="124" hits="0" branch="false" />
+                <line number="125" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="126" hits="0" branch="true" condition-coverage="0% (0/4)" />
                 <line number="127" hits="0" branch="false" />
-                <line number="128" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="128" hits="0" branch="false" />
                 <line number="129" hits="0" branch="false" />
                 <line number="130" hits="0" branch="false" />
                 <line number="131" hits="0" branch="false" />
                 <line number="132" hits="0" branch="false" />
-                <line number="133" hits="0" branch="false" />
+                <line number="133" hits="0" branch="true" condition-coverage="0% (0/2)" />
                 <line number="134" hits="0" branch="false" />
                 <line number="135" hits="0" branch="false" />
                 <line number="136" hits="0" branch="false" />
-                <line number="137" hits="0" branch="false" />
+                <line number="137" hits="0" branch="true" condition-coverage="0% (0/4)" />
                 <line number="138" hits="0" branch="false" />
+                <line number="139" hits="0" branch="false" />
+                <line number="140" hits="0" branch="false" />
+                <line number="141" hits="0" branch="false" />
+                <line number="142" hits="0" branch="false" />
+                <line number="143" hits="0" branch="false" />
+                <line number="144" hits="0" branch="false" />
+                <line number="145" hits="3" branch="false" />
+                <line number="146" hits="3" branch="false" />
+                <line number="147" hits="3" branch="false" />
               </lines>
             </method>
-            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="0" branch="false" />
-                <line number="17" hits="0" branch="false" />
-                <line number="18" hits="0" branch="false" />
-                <line number="19" hits="0" branch="false" />
-                <line number="20" hits="0" branch="false" />
-                <line number="21" hits="0" branch="false" />
-                <line number="22" hits="0" branch="false" />
+                <line number="16" hits="9" branch="false" />
+                <line number="17" hits="9" branch="false" />
+                <line number="18" hits="9" branch="false" />
+                <line number="19" hits="9" branch="false" />
+                <line number="20" hits="9" branch="false" />
+                <line number="21" hits="9" branch="false" />
+                <line number="22" hits="9" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="16" hits="0" branch="false" />
-            <line number="17" hits="0" branch="false" />
-            <line number="18" hits="0" branch="false" />
-            <line number="19" hits="0" branch="false" />
-            <line number="20" hits="0" branch="false" />
-            <line number="21" hits="0" branch="false" />
-            <line number="22" hits="0" branch="false" />
+            <line number="16" hits="9" branch="false" />
+            <line number="17" hits="9" branch="false" />
+            <line number="18" hits="9" branch="false" />
+            <line number="19" hits="9" branch="false" />
+            <line number="20" hits="9" branch="false" />
+            <line number="21" hits="9" branch="false" />
+            <line number="22" hits="9" branch="false" />
             <line number="25" hits="0" branch="false" />
             <line number="26" hits="0" branch="false" />
             <line number="28" hits="0" branch="false" />
@@ -927,74 +927,82 @@
             <line number="53" hits="0" branch="false" />
             <line number="54" hits="0" branch="false" />
             <line number="56" hits="0" branch="false" />
-            <line number="59" hits="0" branch="false" />
-            <line number="60" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="62" hits="0" branch="false" />
+            <line number="59" hits="4" branch="false" />
+            <line number="60" hits="4" branch="true" condition-coverage="50% (1/2)" />
+            <line number="62" hits="7" branch="false" />
             <line number="64" hits="0" branch="false" />
-            <line number="66" hits="0" branch="false" />
-            <line number="69" hits="0" branch="false" />
-            <line number="70" hits="0" branch="false" />
-            <line number="71" hits="0" branch="true" condition-coverage="0% (0/7)" />
+            <line number="66" hits="3" branch="false" />
+            <line number="69" hits="4" branch="false" />
+            <line number="70" hits="4" branch="false" />
+            <line number="71" hits="3" branch="true" condition-coverage="13% (1/8)" />
             <line number="74" hits="0" branch="false" />
             <line number="75" hits="0" branch="false" />
             <line number="76" hits="0" branch="false" />
+            <line number="77" hits="0" branch="false" />
             <line number="78" hits="0" branch="false" />
             <line number="79" hits="0" branch="false" />
             <line number="80" hits="0" branch="false" />
-            <line number="82" hits="0" branch="false" />
-            <line number="83" hits="0" branch="false" />
-            <line number="84" hits="0" branch="false" />
-            <line number="86" hits="0" branch="false" />
+            <line number="81" hits="0" branch="false" />
+            <line number="83" hits="3" branch="false" />
+            <line number="84" hits="3" branch="false" />
+            <line number="85" hits="3" branch="false" />
             <line number="87" hits="0" branch="false" />
+            <line number="88" hits="0" branch="false" />
             <line number="89" hits="0" branch="false" />
-            <line number="90" hits="0" branch="false" />
+            <line number="91" hits="0" branch="false" />
             <line number="92" hits="0" branch="false" />
             <line number="93" hits="0" branch="false" />
-            <line number="94" hits="0" branch="false" />
+            <line number="95" hits="0" branch="false" />
             <line number="96" hits="0" branch="false" />
+            <line number="98" hits="0" branch="false" />
+            <line number="99" hits="0" branch="false" />
+            <line number="101" hits="0" branch="false" />
+            <line number="102" hits="0" branch="false" />
             <line number="103" hits="0" branch="false" />
-            <line number="104" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="105" hits="0" branch="false" />
-            <line number="106" hits="0" branch="true" condition-coverage="0% (0/4)" />
-            <line number="107" hits="0" branch="false" />
-            <line number="108" hits="0" branch="false" />
-            <line number="109" hits="0" branch="false" />
-            <line number="110" hits="0" branch="false" />
-            <line number="111" hits="0" branch="false" />
-            <line number="112" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="113" hits="0" branch="false" />
-            <line number="114" hits="0" branch="false" />
-            <line number="115" hits="0" branch="false" />
-            <line number="116" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="117" hits="0" branch="true" condition-coverage="0% (0/4)" />
-            <line number="118" hits="0" branch="false" />
-            <line number="119" hits="0" branch="false" />
-            <line number="120" hits="0" branch="false" />
-            <line number="121" hits="0" branch="false" />
+            <line number="105" hits="3" branch="false" />
+            <line number="112" hits="3" branch="false" />
+            <line number="113" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="114" hits="3" branch="false" />
+            <line number="115" hits="6" branch="true" condition-coverage="50% (2/4)" />
+            <line number="116" hits="3" branch="false" />
+            <line number="117" hits="3" branch="false" />
+            <line number="118" hits="3" branch="false" />
+            <line number="119" hits="3" branch="false" />
+            <line number="120" hits="3" branch="false" />
+            <line number="121" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="122" hits="0" branch="false" />
             <line number="123" hits="0" branch="false" />
-            <line number="124" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="125" hits="0" branch="false" />
-            <line number="126" hits="0" branch="false" />
+            <line number="124" hits="0" branch="false" />
+            <line number="125" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="126" hits="0" branch="true" condition-coverage="0% (0/4)" />
             <line number="127" hits="0" branch="false" />
-            <line number="128" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="128" hits="0" branch="false" />
             <line number="129" hits="0" branch="false" />
             <line number="130" hits="0" branch="false" />
             <line number="131" hits="0" branch="false" />
             <line number="132" hits="0" branch="false" />
-            <line number="133" hits="0" branch="false" />
+            <line number="133" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="134" hits="0" branch="false" />
             <line number="135" hits="0" branch="false" />
             <line number="136" hits="0" branch="false" />
-            <line number="137" hits="0" branch="false" />
+            <line number="137" hits="0" branch="true" condition-coverage="0% (0/4)" />
             <line number="138" hits="0" branch="false" />
+            <line number="139" hits="0" branch="false" />
+            <line number="140" hits="0" branch="false" />
+            <line number="141" hits="0" branch="false" />
+            <line number="142" hits="0" branch="false" />
+            <line number="143" hits="0" branch="false" />
+            <line number="144" hits="0" branch="false" />
+            <line number="145" hits="3" branch="false" />
+            <line number="146" hits="3" branch="false" />
+            <line number="147" hits="3" branch="false" />
           </lines>
         </class>
-        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.ConsoleManager" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\ConsoleManager.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.ConsoleManager" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\ConsoleManager.cs" line-rate="0.333333333333333" branch-rate="1" complexity="3">
           <methods>
-            <method name="WriteLine" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="WriteLine" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="0" branch="false" />
+                <line number="5" hits="3" branch="false" />
               </lines>
             </method>
             <method name="Write" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
@@ -1009,12 +1017,12 @@
             </method>
           </methods>
           <lines>
-            <line number="5" hits="0" branch="false" />
+            <line number="5" hits="3" branch="false" />
             <line number="6" hits="0" branch="false" />
             <line number="7" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.UnkownDomainException" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\CliCommand.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.UnkownCommandException" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\CliCommand.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1030,40 +1038,40 @@
             <line number="15" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.WrongParametersForCommandException" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\WrongParametersNumberException.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="CleanArchi_ExoFinal.Infrastructure.CLI.WrongParametersForCommandException" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\CLI\WrongParametersNumberException.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="0" branch="false" />
+                <line number="15" hits="3" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="23" hits="0" branch="false" />
+            <line number="15" hits="3" branch="false" />
           </lines>
         </class>
         <class name="CleanArchi_ExoFinal.Infrastructure.Repositories.Context" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\Repositories\Context.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_Tasks" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="18" branch="false" />
+                <line number="7" hits="23" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="5" branch="false" />
-                <line number="10" hits="5" branch="false" />
-                <line number="11" hits="5" branch="false" />
-                <line number="12" hits="5" branch="false" />
+                <line number="9" hits="9" branch="false" />
+                <line number="10" hits="9" branch="false" />
+                <line number="11" hits="9" branch="false" />
+                <line number="12" hits="9" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="18" branch="false" />
-            <line number="9" hits="5" branch="false" />
-            <line number="10" hits="5" branch="false" />
-            <line number="11" hits="5" branch="false" />
-            <line number="12" hits="5" branch="false" />
+            <line number="7" hits="23" branch="false" />
+            <line number="9" hits="9" branch="false" />
+            <line number="10" hits="9" branch="false" />
+            <line number="11" hits="9" branch="false" />
+            <line number="12" hits="9" branch="false" />
           </lines>
         </class>
         <class name="CleanArchi_ExoFinal.Infrastructure.Repositories.TaskJsonRepository" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Infrastructure\Repositories\TaskJsonRepository.cs" line-rate="0" branch-rate="0" complexity="10">
@@ -1198,60 +1206,60 @@
           <methods>
             <method name="GetInstance" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="8" hits="5" branch="false" />
-                <line number="9" hits="5" branch="true" condition-coverage="100% (2/2)" />
-                <line number="10" hits="1" branch="false" />
-                <line number="11" hits="1" branch="false" />
-                <line number="12" hits="1" branch="false" />
-                <line number="13" hits="5" branch="false" />
-                <line number="14" hits="5" branch="false" />
+                <line number="8" hits="9" branch="false" />
+                <line number="9" hits="9" branch="true" condition-coverage="100% (2/2)" />
+                <line number="10" hits="2" branch="false" />
+                <line number="11" hits="2" branch="false" />
+                <line number="12" hits="2" branch="false" />
+                <line number="13" hits="9" branch="false" />
+                <line number="14" hits="9" branch="false" />
               </lines>
             </method>
             <method name="Log" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="8" branch="false" />
-                <line number="18" hits="8" branch="false" />
-                <line number="19" hits="8" branch="false" />
+                <line number="17" hits="11" branch="false" />
+                <line number="18" hits="11" branch="false" />
+                <line number="19" hits="11" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="5" branch="false" />
-            <line number="9" hits="5" branch="true" condition-coverage="100% (2/2)" />
-            <line number="10" hits="1" branch="false" />
-            <line number="11" hits="1" branch="false" />
-            <line number="12" hits="1" branch="false" />
-            <line number="13" hits="5" branch="false" />
-            <line number="14" hits="5" branch="false" />
-            <line number="17" hits="8" branch="false" />
-            <line number="18" hits="8" branch="false" />
-            <line number="19" hits="8" branch="false" />
+            <line number="8" hits="9" branch="false" />
+            <line number="9" hits="9" branch="true" condition-coverage="100% (2/2)" />
+            <line number="10" hits="2" branch="false" />
+            <line number="11" hits="2" branch="false" />
+            <line number="12" hits="2" branch="false" />
+            <line number="13" hits="9" branch="false" />
+            <line number="14" hits="9" branch="false" />
+            <line number="17" hits="11" branch="false" />
+            <line number="18" hits="11" branch="false" />
+            <line number="19" hits="11" branch="false" />
           </lines>
         </class>
-        <class name="CleanArchi_ExoFinal.Utils" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Utils.cs" line-rate="0" branch-rate="0" complexity="4">
+        <class name="CleanArchi_ExoFinal.Utils" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Utils.cs" line-rate="0.875" branch-rate="0.5" complexity="4">
           <methods>
-            <method name="GetEnumDescription" signature="(...)" line-rate="0" branch-rate="0" complexity="4">
+            <method name="GetEnumDescription" signature="(...)" line-rate="0.875" branch-rate="0.5" complexity="4">
               <lines>
-                <line number="9" hits="0" branch="false" />
-                <line number="10" hits="0" branch="false" />
-                <line number="11" hits="0" branch="false" />
-                <line number="12" hits="0" branch="true" condition-coverage="0% (0/4)" />
-                <line number="13" hits="0" branch="false" />
-                <line number="14" hits="0" branch="false" />
+                <line number="9" hits="1" branch="false" />
+                <line number="10" hits="1" branch="false" />
+                <line number="11" hits="1" branch="false" />
+                <line number="12" hits="1" branch="true" condition-coverage="50% (2/4)" />
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
                 <line number="16" hits="0" branch="false" />
-                <line number="17" hits="0" branch="false" />
+                <line number="17" hits="1" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="0" branch="false" />
-            <line number="10" hits="0" branch="false" />
-            <line number="11" hits="0" branch="false" />
-            <line number="12" hits="0" branch="true" condition-coverage="0% (0/4)" />
-            <line number="13" hits="0" branch="false" />
-            <line number="14" hits="0" branch="false" />
+            <line number="9" hits="1" branch="false" />
+            <line number="10" hits="1" branch="false" />
+            <line number="11" hits="1" branch="false" />
+            <line number="12" hits="1" branch="true" condition-coverage="50% (2/4)" />
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
             <line number="16" hits="0" branch="false" />
-            <line number="17" hits="0" branch="false" />
+            <line number="17" hits="1" branch="false" />
           </lines>
         </class>
         <class name="Program" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\CleanArchi_ExoFinal\Program.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -1282,7 +1290,7 @@
         </class>
       </classes>
     </package>
-    <package name="UnitTesting" line-rate="0.978947368421053" branch-rate="1" complexity="15">
+    <package name="UnitTesting" line-rate="0.977611940298508" branch-rate="1" complexity="22">
       <classes>
         <class name="AutoGeneratedProgram" filename="C:\Users\Guillaume\.nuget\packages\microsoft.net.test.sdk\17.1.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -1296,94 +1304,192 @@
             <line number="4" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="UnitTesting.InMemoryRepository" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\UnitTesting\InMemoryRepository.cs" line-rate="1" branch-rate="1" complexity="8">
+        <class name="UnitTesting.ConsoleEngineTests" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\UnitTesting\ConsoleEngineTests.cs" line-rate="0.967741935483871" branch-rate="1" complexity="5">
           <methods>
+            <method name="Test1" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="1" branch="false" />
+                <line number="17" hits="1" branch="false" />
+                <line number="18" hits="1" branch="false" />
+                <line number="19" hits="1" branch="false" />
+                <line number="20" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Test2" signature="()" line-rate="0.888888888888889" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+                <line number="32" hits="1" branch="false" />
+                <line number="33" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Test3" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Test4" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="4" branch="false" />
+                <line number="9" hits="4" branch="false" />
+                <line number="10" hits="4" branch="false" />
+                <line number="11" hits="4" branch="false" />
+                <line number="12" hits="4" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="4" branch="false" />
+            <line number="9" hits="4" branch="false" />
+            <line number="10" hits="4" branch="false" />
+            <line number="11" hits="4" branch="false" />
+            <line number="12" hits="4" branch="false" />
+            <line number="16" hits="1" branch="false" />
+            <line number="17" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="20" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
+            <line number="33" hits="1" branch="false" />
+            <line number="37" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="UnitTesting.InMemoryRepository" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\UnitTesting\InMemoryRepository.cs" line-rate="1" branch-rate="1" complexity="9">
+          <methods>
+            <method name="Clear" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="4" branch="false" />
+                <line number="9" hits="4" branch="false" />
+                <line number="10" hits="4" branch="false" />
+              </lines>
+            </method>
             <method name="Delete" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="1" branch="false" />
-                <line number="12" hits="2" branch="false" />
                 <line number="13" hits="1" branch="false" />
-                <line number="14" hits="1" branch="false" />
+                <line number="14" hits="2" branch="false" />
+                <line number="15" hits="1" branch="false" />
+                <line number="16" hits="1" branch="false" />
               </lines>
             </method>
             <method name="Exists" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="4" branch="false" />
-                <line number="18" hits="7" branch="false" />
                 <line number="19" hits="4" branch="false" />
+                <line number="20" hits="7" branch="false" />
+                <line number="21" hits="4" branch="false" />
               </lines>
             </method>
             <method name="Read" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="1" branch="false" />
-                <line number="23" hits="1" branch="false" />
-                <line number="24" hits="1" branch="false" />
+                <line number="24" hits="3" branch="false" />
+                <line number="25" hits="3" branch="false" />
+                <line number="26" hits="3" branch="false" />
               </lines>
             </method>
             <method name="Read" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="27" hits="5" branch="false" />
-                <line number="28" hits="10" branch="false" />
                 <line number="29" hits="5" branch="false" />
+                <line number="30" hits="10" branch="false" />
+                <line number="31" hits="5" branch="false" />
               </lines>
             </method>
             <method name="Update" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="32" hits="2" branch="false" />
-                <line number="33" hits="4" branch="false" />
-                <line number="34" hits="2" branch="true" condition-coverage="100% (2/2)" />
-                <line number="35" hits="2" branch="false" />
-                <line number="36" hits="2" branch="false" />
+                <line number="34" hits="2" branch="false" />
+                <line number="35" hits="4" branch="false" />
+                <line number="36" hits="2" branch="true" condition-coverage="100% (2/2)" />
                 <line number="37" hits="2" branch="false" />
                 <line number="38" hits="2" branch="false" />
                 <line number="39" hits="2" branch="false" />
                 <line number="40" hits="2" branch="false" />
                 <line number="41" hits="2" branch="false" />
+                <line number="42" hits="2" branch="false" />
+                <line number="43" hits="2" branch="false" />
               </lines>
             </method>
             <method name="Write" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="44" hits="5" branch="false" />
-                <line number="45" hits="5" branch="false" />
-                <line number="46" hits="5" branch="false" />
-                <line number="47" hits="5" branch="false" />
+                <line number="46" hits="8" branch="false" />
+                <line number="47" hits="8" branch="false" />
+                <line number="48" hits="8" branch="false" />
+                <line number="49" hits="8" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="5" branch="false" />
+                <line number="5" hits="9" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="5" branch="false" />
-            <line number="11" hits="1" branch="false" />
-            <line number="12" hits="2" branch="false" />
+            <line number="5" hits="9" branch="false" />
+            <line number="8" hits="4" branch="false" />
+            <line number="9" hits="4" branch="false" />
+            <line number="10" hits="4" branch="false" />
             <line number="13" hits="1" branch="false" />
-            <line number="14" hits="1" branch="false" />
-            <line number="17" hits="4" branch="false" />
-            <line number="18" hits="7" branch="false" />
+            <line number="14" hits="2" branch="false" />
+            <line number="15" hits="1" branch="false" />
+            <line number="16" hits="1" branch="false" />
             <line number="19" hits="4" branch="false" />
-            <line number="22" hits="1" branch="false" />
-            <line number="23" hits="1" branch="false" />
-            <line number="24" hits="1" branch="false" />
-            <line number="27" hits="5" branch="false" />
-            <line number="28" hits="10" branch="false" />
+            <line number="20" hits="7" branch="false" />
+            <line number="21" hits="4" branch="false" />
+            <line number="24" hits="3" branch="false" />
+            <line number="25" hits="3" branch="false" />
+            <line number="26" hits="3" branch="false" />
             <line number="29" hits="5" branch="false" />
-            <line number="32" hits="2" branch="false" />
-            <line number="33" hits="4" branch="false" />
-            <line number="34" hits="2" branch="true" condition-coverage="100% (2/2)" />
-            <line number="35" hits="2" branch="false" />
-            <line number="36" hits="2" branch="false" />
+            <line number="30" hits="10" branch="false" />
+            <line number="31" hits="5" branch="false" />
+            <line number="34" hits="2" branch="false" />
+            <line number="35" hits="4" branch="false" />
+            <line number="36" hits="2" branch="true" condition-coverage="100% (2/2)" />
             <line number="37" hits="2" branch="false" />
             <line number="38" hits="2" branch="false" />
             <line number="39" hits="2" branch="false" />
             <line number="40" hits="2" branch="false" />
             <line number="41" hits="2" branch="false" />
-            <line number="44" hits="5" branch="false" />
-            <line number="45" hits="5" branch="false" />
-            <line number="46" hits="5" branch="false" />
-            <line number="47" hits="5" branch="false" />
+            <line number="42" hits="2" branch="false" />
+            <line number="43" hits="2" branch="false" />
+            <line number="46" hits="8" branch="false" />
+            <line number="47" hits="8" branch="false" />
+            <line number="48" hits="8" branch="false" />
+            <line number="49" hits="8" branch="false" />
           </lines>
         </class>
         <class name="UnitTesting.TaskTests" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\UnitTesting\TaskTests.cs" line-rate="0.983606557377049" branch-rate="1" complexity="5">
@@ -1534,24 +1640,38 @@
             <line number="82" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="UnitTesting.TestBase" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\UnitTesting\TestBase.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="UnitTesting.TestBase" filename="E:\RepoGit\CleanArchi_ExoFinal\CleanArchi_ExoFinal\UnitTesting\TestBase.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
+            <method name="ClearRepository" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="4" branch="false" />
+                <line number="19" hits="4" branch="false" />
+                <line number="20" hits="4" branch="false" />
+              </lines>
+            </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="5" branch="false" />
-                <line number="8" hits="5" branch="false" />
-                <line number="9" hits="5" branch="false" />
-                <line number="10" hits="5" branch="false" />
-                <line number="11" hits="5" branch="false" />
+                <line number="9" hits="9" branch="false" />
+                <line number="10" hits="9" branch="false" />
+                <line number="11" hits="9" branch="false" />
+                <line number="12" hits="9" branch="false" />
+                <line number="13" hits="9" branch="false" />
+                <line number="14" hits="9" branch="false" />
+                <line number="15" hits="9" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="5" branch="false" />
-            <line number="8" hits="5" branch="false" />
-            <line number="9" hits="5" branch="false" />
-            <line number="10" hits="5" branch="false" />
-            <line number="11" hits="5" branch="false" />
+            <line number="9" hits="9" branch="false" />
+            <line number="10" hits="9" branch="false" />
+            <line number="11" hits="9" branch="false" />
+            <line number="12" hits="9" branch="false" />
+            <line number="13" hits="9" branch="false" />
+            <line number="14" hits="9" branch="false" />
+            <line number="15" hits="9" branch="false" />
+            <line number="18" hits="4" branch="false" />
+            <line number="19" hits="4" branch="false" />
+            <line number="20" hits="4" branch="false" />
           </lines>
         </class>
       </classes>

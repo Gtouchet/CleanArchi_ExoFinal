@@ -26,10 +26,10 @@ public class AgendaCommandParser
         
         updatedString = updatedString.Remove(0, parts[0].Length);
         parts.RemoveAt(0);
-        if (result.Command != EAgendaCommand.ReadAll && parts.Count < 1)
+        if (result.Command != EAgendaCommand.ReadAll && result.Command != EAgendaCommand.Help && parts.Count < 1)
             throw new WrongParametersForCommandException(CommandErrorMessage.NotEnoughArguments);
         
-        // si plus rien == Read or ReadAll
+        // si plus rien == Read or Readall
         if (parts.Count == 0) return result;
         
         return ParseOptions(result, updatedString);

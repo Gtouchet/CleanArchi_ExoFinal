@@ -33,11 +33,209 @@
 [19/28/2023 - 06:28:26] - DeleteTaskCommandHandler called on task ID d08f3cd4-63a7-4793-8a5b-348a10f52fbf
 [19/28/2023 - 06:28:26] - CreateTaskCommandHandler called
 [19/28/2023 - 06:28:26] - AddSubTaskCommandHandler called on task ID 2ea5d2ab-aa0a-4f9d-ac71-6b9048c18d81
-[19/28/2023 - 06:28:29] - CreateTaskCommandHandler called
-[19/28/2023 - 06:28:29] - CreateTaskCommandHandler called
-[19/28/2023 - 06:28:29] - UpdateTaskCommandHandler called on task ID e1dc3022-1cdb-453b-a74f-bd39d70f0b65
-[19/28/2023 - 06:28:29] - CreateTaskCommandHandler called
-[19/28/2023 - 06:28:29] - CreateTaskCommandHandler called
-[19/28/2023 - 06:28:29] - DeleteTaskCommandHandler called on task ID 1970fdd6-2f07-425a-983c-527ce4b46635
-[19/28/2023 - 06:28:29] - CreateTaskCommandHandler called
-[19/28/2023 - 06:28:29] - AddSubTaskCommandHandler called on task ID 96b2ab64-dc75-4063-9f65-49e8511f1f74
+[20/04/2023 - 10:04:45] - CreateTaskCommandHandler called
+[20/09/2023 - 10:09:57] - CreateTaskCommandHandler called
+[20/09/2023 - 10:09:57] - CreateTaskCommandHandler called
+[20/09/2023 - 10:09:57] - UpdateTaskCommandHandler called on task ID 4b80875d-dc99-4114-a02d-422398bfffab
+[20/09/2023 - 10:09:57] - CreateTaskCommandHandler called
+[20/09/2023 - 10:09:57] - CreateTaskCommandHandler called
+[20/09/2023 - 10:09:57] - DeleteTaskCommandHandler called on task ID 9642be83-6023-4e77-82b3-ac1b75c9ad51
+[20/09/2023 - 10:09:57] - CreateTaskCommandHandler called
+[20/09/2023 - 10:09:57] - AddSubTaskCommandHandler called on task ID a4de4ac0-0eff-467e-8979-b3e52a7cfb9b
+[20/09/2023 - 10:09:57] - CreateTaskCommandHandler called
+[20/10/2023 - 10:10:07] - CreateTaskCommandHandler called
+[20/10/2023 - 10:10:07] - CreateTaskCommandHandler called
+[20/10/2023 - 10:10:07] - UpdateTaskCommandHandler called on task ID 317bbb32-bd1f-4fd2-81a4-ec9e8c3a92c3
+[20/10/2023 - 10:10:07] - CreateTaskCommandHandler called
+[20/10/2023 - 10:10:07] - CreateTaskCommandHandler called
+[20/10/2023 - 10:10:07] - DeleteTaskCommandHandler called on task ID 987022c7-0ded-43e0-b169-4db369206dfa
+[20/10/2023 - 10:10:07] - CreateTaskCommandHandler called
+[20/10/2023 - 10:10:07] - AddSubTaskCommandHandler called on task ID 89a13495-7f0a-4c28-9b42-770b4ecd7aef
+[20/10/2023 - 10:10:07] - CreateTaskCommandHandler called
+[20/14/2023 - 10:14:13] - CreateTaskCommandHandler called
+[20/14/2023 - 10:14:36] - CreateTaskCommandHandler called
+[20/14/2023 - 10:14:36] - CreateTaskCommandHandler called
+[20/14/2023 - 10:14:36] - UpdateTaskCommandHandler called on task ID 83797979-0480-46b0-ba11-96fca827be0d
+[20/14/2023 - 10:14:36] - CreateTaskCommandHandler called
+[20/14/2023 - 10:14:36] - CreateTaskCommandHandler called
+[20/14/2023 - 10:14:36] - DeleteTaskCommandHandler called on task ID d8118526-de81-40b1-9552-daaefe0b3c81
+[20/14/2023 - 10:14:36] - CreateTaskCommandHandler called
+[20/14/2023 - 10:14:36] - AddSubTaskCommandHandler called on task ID d252bedb-665d-400f-86d6-f141269ce521
+[20/14/2023 - 10:14:36] - CreateTaskCommandHandler called
+[20/14/2023 - 10:14:36] - CreateTaskCommandHandler called
+[20/16/2023 - 10:16:03] - CreateTaskCommandHandler called
+[20/16/2023 - 10:16:17] - CreateTaskCommandHandler called
+[20/17/2023 - 10:17:32] - CreateTaskCommandHandler called
+[20/17/2023 - 10:17:56] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:07] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:28] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:28] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:28] - UpdateTaskCommandHandler called on task ID f9d1efc9-1b37-43f4-ba29-11fa4b49b1d2
+[20/18/2023 - 10:18:28] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:28] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:28] - DeleteTaskCommandHandler called on task ID a77cc85c-d4d7-4706-8296-4007460e7399
+[20/18/2023 - 10:18:28] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:28] - AddSubTaskCommandHandler called on task ID f8ff2a8f-ebe3-421c-9806-0b691fb2a2b3
+[20/18/2023 - 10:18:28] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:28] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:41] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:41] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:41] - UpdateTaskCommandHandler called on task ID f8249821-b9c5-4cc7-aba3-cd3ab699b6b6
+[20/18/2023 - 10:18:41] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:41] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:41] - DeleteTaskCommandHandler called on task ID 97452572-4428-4433-8e88-daeadf519087
+[20/18/2023 - 10:18:41] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:41] - AddSubTaskCommandHandler called on task ID ad5bd4f3-24c7-42b3-9f66-2f244b2a305c
+[20/18/2023 - 10:18:41] - CreateTaskCommandHandler called
+[20/18/2023 - 10:18:42] - CreateTaskCommandHandler called
+[20/21/2023 - 10:21:32] - CreateTaskCommandHandler called
+[20/21/2023 - 10:21:32] - CreateTaskCommandHandler called
+[20/21/2023 - 10:21:32] - UpdateTaskCommandHandler called on task ID a8fba31f-fbfb-474a-8a84-4a5323bd4cf3
+[20/21/2023 - 10:21:32] - CreateTaskCommandHandler called
+[20/21/2023 - 10:21:32] - CreateTaskCommandHandler called
+[20/21/2023 - 10:21:32] - DeleteTaskCommandHandler called on task ID 08ede6d4-5b1f-4985-8337-6544bcbb7f69
+[20/21/2023 - 10:21:32] - CreateTaskCommandHandler called
+[20/21/2023 - 10:21:32] - AddSubTaskCommandHandler called on task ID a5eb7118-3071-4f2b-a827-41e43265f7ff
+[20/21/2023 - 10:21:32] - CreateTaskCommandHandler called
+[20/21/2023 - 10:21:32] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:21] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:21] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:21] - UpdateTaskCommandHandler called on task ID 8d1dfcc3-ff30-4cf4-8bfa-b42aabdaafde
+[20/26/2023 - 10:26:21] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:21] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:21] - DeleteTaskCommandHandler called on task ID 3601d901-81b0-4258-9cc1-d36edf11c154
+[20/26/2023 - 10:26:21] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:21] - AddSubTaskCommandHandler called on task ID 0f5d0dbc-9f20-4fc4-b720-de3246f1f65b
+[20/26/2023 - 10:26:21] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:21] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:21] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:27] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:27] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:27] - UpdateTaskCommandHandler called on task ID 8aac44d9-0093-4627-bf34-49501e3dadd1
+[20/26/2023 - 10:26:27] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:27] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:27] - DeleteTaskCommandHandler called on task ID 61967918-9856-4c2a-8730-be3c3cb07610
+[20/26/2023 - 10:26:27] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:27] - AddSubTaskCommandHandler called on task ID 4b7bbd57-5ab9-468e-bb70-c9ac213d46a9
+[20/26/2023 - 10:26:27] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:27] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:27] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:32] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:32] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:32] - UpdateTaskCommandHandler called on task ID 22218b11-9393-4380-aabf-fad2aadbf00b
+[20/26/2023 - 10:26:32] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:32] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:32] - DeleteTaskCommandHandler called on task ID 5227f6e8-0084-4cd5-8ffa-d8289e87ed27
+[20/26/2023 - 10:26:32] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:32] - AddSubTaskCommandHandler called on task ID e2185b4f-c179-45f3-8a74-1151cdc830e2
+[20/26/2023 - 10:26:32] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:32] - CreateTaskCommandHandler called
+[20/26/2023 - 10:26:32] - CreateTaskCommandHandler called
+[20/27/2023 - 10:27:47] - CreateTaskCommandHandler called
+[20/27/2023 - 10:27:47] - CreateTaskCommandHandler called
+[20/27/2023 - 10:27:47] - CreateTaskCommandHandler called
+[20/27/2023 - 10:27:47] - UpdateTaskCommandHandler called on task ID fef8436f-3a71-4953-9652-ddbd216aba90
+[20/27/2023 - 10:27:47] - CreateTaskCommandHandler called
+[20/27/2023 - 10:27:47] - CreateTaskCommandHandler called
+[20/27/2023 - 10:27:47] - DeleteTaskCommandHandler called on task ID 1dbe2973-a42a-418d-bc07-b22d9e2b5ac5
+[20/27/2023 - 10:27:47] - CreateTaskCommandHandler called
+[20/27/2023 - 10:27:47] - AddSubTaskCommandHandler called on task ID c2456473-9935-4625-ab83-630602a72f23
+[20/30/2023 - 10:30:14] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:14] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:14] - UpdateTaskCommandHandler called on task ID 0bc199d2-5ab1-41eb-9324-858ed6a8fa9d
+[20/30/2023 - 10:30:14] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:14] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:14] - DeleteTaskCommandHandler called on task ID 0543de31-a375-4d0a-bdae-e171d269bca9
+[20/30/2023 - 10:30:14] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:14] - AddSubTaskCommandHandler called on task ID 660562c9-5388-45b8-b397-acdd2a44fe9e
+[20/30/2023 - 10:30:14] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:14] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:14] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:45] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:45] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:45] - UpdateTaskCommandHandler called on task ID 97f2c560-3b53-4c03-886d-4639c1f4a775
+[20/30/2023 - 10:30:45] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:45] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:45] - DeleteTaskCommandHandler called on task ID 3f52b29c-e0f7-4d1c-ac7d-6932adc3391a
+[20/30/2023 - 10:30:45] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:45] - AddSubTaskCommandHandler called on task ID 8eb34a4f-0755-403f-b087-18496545f4dd
+[20/30/2023 - 10:30:45] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:45] - CreateTaskCommandHandler called
+[20/30/2023 - 10:30:45] - CreateTaskCommandHandler called
+[20/34/2023 - 10:34:46] - CreateTaskCommandHandler called
+[20/34/2023 - 10:34:46] - CreateTaskCommandHandler called
+[20/34/2023 - 10:34:46] - UpdateTaskCommandHandler called on task ID dc2925c2-2f30-4958-bc83-9a815d1750cc
+[20/34/2023 - 10:34:46] - CreateTaskCommandHandler called
+[20/34/2023 - 10:34:46] - CreateTaskCommandHandler called
+[20/34/2023 - 10:34:46] - DeleteTaskCommandHandler called on task ID 6e07852d-9b2f-4caa-9238-765088a6813e
+[20/34/2023 - 10:34:46] - CreateTaskCommandHandler called
+[20/34/2023 - 10:34:46] - AddSubTaskCommandHandler called on task ID 7342f185-c978-4615-a37b-4a0f9c5bff39
+[20/34/2023 - 10:34:46] - CreateTaskCommandHandler called
+[20/34/2023 - 10:34:46] - CreateTaskCommandHandler called
+[20/34/2023 - 10:34:46] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:11] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:11] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:11] - UpdateTaskCommandHandler called on task ID a4d2401c-9f3e-4d91-b5db-f47fcf6184c2
+[20/39/2023 - 10:39:11] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:11] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:11] - DeleteTaskCommandHandler called on task ID 73e65303-5592-4fd9-8fa9-7270200f92ee
+[20/39/2023 - 10:39:11] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:11] - AddSubTaskCommandHandler called on task ID 01604e4b-91c3-44da-85de-70e630f09b5f
+[20/39/2023 - 10:39:11] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:11] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:11] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:26] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:26] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:26] - UpdateTaskCommandHandler called on task ID c4339e3a-5966-463d-8833-1821896335ee
+[20/39/2023 - 10:39:26] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:26] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:26] - DeleteTaskCommandHandler called on task ID f1d6cf8c-a58d-40b4-a5a1-ec3ecc884378
+[20/39/2023 - 10:39:26] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:26] - AddSubTaskCommandHandler called on task ID d6661ed6-c92e-4bc2-8540-5d41ae2d0c92
+[20/39/2023 - 10:39:26] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:26] - CreateTaskCommandHandler called
+[20/39/2023 - 10:39:26] - CreateTaskCommandHandler called
+[20/42/2023 - 10:42:49] - CreateTaskCommandHandler called
+[20/42/2023 - 10:42:49] - CreateTaskCommandHandler called
+[20/42/2023 - 10:42:49] - UpdateTaskCommandHandler called on task ID d0236e72-9c32-4957-a08c-d430f1eddc9e
+[20/42/2023 - 10:42:49] - CreateTaskCommandHandler called
+[20/42/2023 - 10:42:49] - CreateTaskCommandHandler called
+[20/42/2023 - 10:42:49] - DeleteTaskCommandHandler called on task ID ecabe0fb-d355-48ba-ad99-9cad9ed3459a
+[20/42/2023 - 10:42:49] - CreateTaskCommandHandler called
+[20/42/2023 - 10:42:49] - AddSubTaskCommandHandler called on task ID c5bd3081-31df-44cc-a0f3-4dee94df0dd0
+[20/42/2023 - 10:42:49] - CreateTaskCommandHandler called
+[20/42/2023 - 10:42:49] - CreateTaskCommandHandler called
+[20/42/2023 - 10:42:49] - CreateTaskCommandHandler called
+[20/51/2023 - 10:51:32] - CreateTaskCommandHandler called
+[20/51/2023 - 10:51:32] - CreateTaskCommandHandler called
+[20/51/2023 - 10:51:32] - UpdateTaskCommandHandler called on task ID effca376-5b34-43d9-aab7-0415a6a0d8ac
+[20/51/2023 - 10:51:32] - CreateTaskCommandHandler called
+[20/51/2023 - 10:51:32] - CreateTaskCommandHandler called
+[20/51/2023 - 10:51:32] - DeleteTaskCommandHandler called on task ID 23864764-7555-4fc5-8dd5-5eb8e1d60809
+[20/51/2023 - 10:51:32] - CreateTaskCommandHandler called
+[20/51/2023 - 10:51:32] - AddSubTaskCommandHandler called on task ID 7a7c1abf-9507-44f4-9211-872a10a20ac6
+[20/51/2023 - 10:51:32] - CreateTaskCommandHandler called
+[20/51/2023 - 10:51:32] - CreateTaskCommandHandler called
+[20/51/2023 - 10:51:32] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:39] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:39] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:39] - UpdateTaskCommandHandler called on task ID 65d6cb90-6fc9-453c-b6fa-6fa369703ce0
+[20/57/2023 - 10:57:39] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:39] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:39] - DeleteTaskCommandHandler called on task ID 5fb0fabf-6d20-4428-ab6b-da294e41e82b
+[20/57/2023 - 10:57:39] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:39] - AddSubTaskCommandHandler called on task ID 5e99cd08-acbc-4558-8ef4-ee02ef426245
+[20/57/2023 - 10:57:39] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:39] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:39] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:42] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:42] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:42] - UpdateTaskCommandHandler called on task ID e56781c9-e7d5-4bfa-99dc-f3e5414118e8
+[20/57/2023 - 10:57:42] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:42] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:42] - DeleteTaskCommandHandler called on task ID 75dcfa2c-dbd0-4bbe-8374-68a1919e7346
+[20/57/2023 - 10:57:42] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:42] - AddSubTaskCommandHandler called on task ID 5c78086a-b7cd-46af-8d0c-0b095ac9b7b0
+[20/57/2023 - 10:57:42] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:42] - CreateTaskCommandHandler called
+[20/57/2023 - 10:57:42] - CreateTaskCommandHandler called

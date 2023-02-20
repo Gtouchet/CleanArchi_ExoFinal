@@ -61,7 +61,7 @@ public class ConsoleEngine : ConsoleManager
         {
            case CliCommand.Agenda: this.InterpretAgendaCommand(userCommand!); break;
            // other commands
-           default: throw new UnkownDomainException($"Error, unknown domain");
+           default: throw new UnkownCommandException($"Error, unknown domain");
         }
     }
 
@@ -70,6 +70,15 @@ public class ConsoleEngine : ConsoleManager
         AgendaCommand agendaCommand = this.agendaCommandParser.Parse(userCommand);
         switch (agendaCommand.Command)
         {
+            case EAgendaCommand.Help:
+                this.WriteLine("list of agenda commands:\n" +
+                    "agenda create: agenda create -c:\"description\" -d:2023-01-01 -s:todo\n" +
+                    "agenda read: agenda read -id:guid\n" +
+                    "agenda readall: agenda readall\n" +
+                    "agenda update: agenda update -id:guid -c:\"description\" -d:2023-01-01 -s:todo\n" +
+                    "agenda delete: agenda delete -id:guid\n" +
+                    "agenda add: agenda add -id:guid -c:\"description\" -d:2023-01-01 -s:todo\n");
+                break;
             case EAgendaCommand.Create:
                 Guid id = (Guid)this.handlersProcessor.ExecuteCommand(this.ParseAgendaCommandAs<CreateTaskCommand>(agendaCommand)!);
                 this.WriteLine(id.ToString());
@@ -91,7 +100,7 @@ public class ConsoleEngine : ConsoleManager
             case EAgendaCommand.Add:
                 this.handlersProcessor.ExecuteCommand(this.ParseAgendaCommandAs<AddSubTaskCommand>(agendaCommand)!);
                 break;
-            default: throw new Exception(""); // TODO
+            default: throw new WrongParametersForCommandException(CommandErrorMessage.CommandNotRecognized);
         }
     }
 

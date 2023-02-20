@@ -7,3 +7,4 @@ global using CleanArchi_ExoFinal.Domain;
 global using CleanArchi_ExoFinal.Application.Handlers.QueryHandlers;
 global using CleanArchi_ExoFinal;
 global using CleanArchi_ExoFinal.Application.Handlers.CommandHandlers;
+global using CleanArchi_ExoFinal.Infrastructure.CLI;

@@ -14,6 +14,7 @@ public struct AgendaCommand
 public enum EAgendaCommand
 {
     Unknown,
+    Help,
     Create,
     Read,
     ReadAll,

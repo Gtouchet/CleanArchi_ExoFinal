@@ -1,11 +1,13 @@
-﻿using CleanArchi_ExoFinal.Domain;
-using CleanArchi_ExoFinal.Infrastructure.Repositories;
-
-namespace UnitTesting;
+﻿namespace UnitTesting;
 
 internal class InMemoryRepository : IRepository<TaskEntity>
 {
     List<TaskEntity> tasks = new List<TaskEntity>();
+
+    public void Clear()
+    {
+        this.tasks.Clear();
+    }
 
     public bool Delete(Guid id)
     {
