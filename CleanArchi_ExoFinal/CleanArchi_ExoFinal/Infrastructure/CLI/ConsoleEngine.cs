@@ -23,8 +23,8 @@ public class ConsoleEngine : ConsoleManager
 
     public void Run()
     {
-        this.WriteLine("bonjour TODO tuto comment ca marche ?");
-        
+        this.WriteLine("Use 'agenda help' to get a list of commands");
+
         (CliCommand, string?) userInput = this.GetUserCommand();
         while (!userInput.Item1.Equals(CliCommand.Quit))
         {
@@ -71,13 +71,13 @@ public class ConsoleEngine : ConsoleManager
         switch (agendaCommand.Command)
         {
             case EAgendaCommand.Help:
-                this.WriteLine("list of agenda commands:\n" +
-                    "agenda create: agenda create -c:\"description\" -d:2023-01-01 -s:todo\n" +
-                    "agenda read: agenda read -id:guid\n" +
-                    "agenda readall: agenda readall\n" +
-                    "agenda update: agenda update -id:guid -c:\"description\" -d:2023-01-01 -s:todo\n" +
-                    "agenda delete: agenda delete -id:guid\n" +
-                    "agenda add: agenda add -id:guid -c:\"description\" -d:2023-01-01 -s:todo\n");
+                this.WriteLine("list of agenda commands (the arguments order does not matter) :\n" +
+                    "create  > agenda create -c:\"description\" -d:yyyy-mm-dd -s:todo\n" +
+                    "read    > agenda read -id:guid\n" +
+                    "readall > agenda readall\n" +
+                    "update  > agenda update -id:guid -c:\"description\" -d:yyyy-mm-dd -s:todo\n" +
+                    "delete  > agenda delete -id:guid\n" +
+                    "add     > agenda add -id:guid -c:\"description\" -d:yyyy-mm-dd -s:todo\n");
                 break;
             case EAgendaCommand.Create:
                 Guid id = (Guid)this.handlersProcessor.ExecuteCommand(this.ParseAgendaCommandAs<CreateTaskCommand>(agendaCommand)!);
